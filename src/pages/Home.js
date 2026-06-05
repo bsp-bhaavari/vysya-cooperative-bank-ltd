@@ -127,7 +127,7 @@ const Home = () => {
     const testImage = new Image();
     testImage.onload = () => console.log('Test image loaded successfully');
     testImage.onerror = () => console.error('Test image failed to load');
-    testImage.src = '/images/locker-facility.jpeg';
+    testImage.src = `${process.env.PUBLIC_URL}/images/locker-facility.jpeg`;
     
     return () => clearInterval(timer);
   }, [heroSlides.length]);
@@ -144,7 +144,7 @@ const Home = () => {
     <div className="pt-16">
       <section className="relative h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[75vh] w-full overflow-hidden">
         <img
-          src={heroSlides[currentSlide].bgImage}
+          src={`${process.env.PUBLIC_URL}${heroSlides[currentSlide].bgImage}`}
           alt={heroSlides[currentSlide].title}
           className="absolute w-full h-full object-cover object-center"
           loading="eager"
@@ -214,7 +214,7 @@ const Home = () => {
                 <div className="grid grid-cols-3 gap-3">
                   {heroSlides[currentSlide].features.map((feature, index) => (
                     <div key={index} className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-3 text-center">
-                      <Award className="w-4 h-4 text-gold-300 mx-auto mb-1" />
+                      <Award className="w-4 h-4 text-emerald-400 mx-auto mb-1" />
                       <span className="text-white text-xs font-medium">{feature}</span>
                     </div>
                   ))}
@@ -223,7 +223,7 @@ const Home = () => {
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Link
                     to="/contact"
-                    className="px-6 py-3 bg-trust-600 text-white font-semibold rounded-lg hover:bg-trust-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 text-sm sm:text-base"
+                    className="px-6 py-3 bg-trust-600 text-white font-semibold rounded-lg hover:bg-gold-500 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 text-sm sm:text-base"
                   >
                     Get Started Today
                   </Link>
@@ -243,7 +243,7 @@ const Home = () => {
       <section 
         className="relative py-20 px-6 bg-cover bg-center"
         style={{
-          backgroundImage: 'url("/images/about-bank.webp")'
+          backgroundImage: `url("${process.env.PUBLIC_URL}/images/about-bank.webp")`
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-white/92 via-surface-tint/85 to-white/90" />
@@ -251,7 +251,7 @@ const Home = () => {
         
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <div className="mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-trust-900 mb-6 tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-trust-900 mb-3 tracking-tight border-b-2 border-gold-400 inline-block pb-2">
               About Vysya Co-operative Bank
             </h2>
             <h3 className="text-2xl md:text-3xl text-trust-700 font-light mb-8">
@@ -287,9 +287,9 @@ const Home = () => {
         
         <div className="relative z-10 container-max">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight border-b-2 border-gold-400/60 inline-block pb-2">
               Trusted by
-              <span className="text-gold-300"> Thousands</span> of Customers
+              <span className="text-gold-400"> Thousands</span> of Customers
             </h2>
             <p className="text-xl text-white/90 max-w-2xl mx-auto">
               Join our growing family of satisfied customers who trust us with their financial future
@@ -320,7 +320,7 @@ const Home = () => {
       <section className="py-20 bg-gradient-to-b from-surface-muted/80 to-surface-page">
         <div className="container-max">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-trust-900 mb-4 tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-trust-900 mb-3 tracking-tight border-b-2 border-gold-400 inline-block pb-2">
               Home Loan
               <span className="text-trust-600"> Interest Rates</span>
             </h2>
@@ -333,7 +333,7 @@ const Home = () => {
             {homeLoanRates.map((loan, index) => (
               <div
                 key={index}
-                className="relative group bg-white rounded-2xl border border-gray-100 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 overflow-hidden"
+                className="relative group bg-white rounded-2xl border border-gray-100 shadow-[0_10px_30px_rgba(11,31,58,0.08)] hover:shadow-[0_20px_50px_rgba(11,31,58,0.12)] transition-all duration-300 hover:-translate-y-1 overflow-hidden"
               >
                 <div className={`absolute inset-x-0 top-0 h-2 bg-gradient-to-r ${loan.gradient}`} />
                 <div className="p-8 text-center">
@@ -356,7 +356,7 @@ const Home = () => {
                   </div>
                   <Link
                     to="/banking/loans/housing-loan"
-                    className="mt-6 inline-flex items-center text-trust-600 hover:text-trust-700 font-medium group/link"
+                    className="mt-6 inline-flex items-center text-trust-600 hover:text-gold-500 font-medium group/link"
                   >
                     Know More
                     <ArrowRight className="w-4 h-4 ml-1 group-hover/link:translate-x-1 transition-transform" />
@@ -369,7 +369,7 @@ const Home = () => {
           <div className="text-center">
             <Link
               to="/interest-rates/loans"
-              className="inline-flex items-center px-8 py-4 bg-trust-600 text-white font-semibold rounded-xl hover:bg-trust-700 transition-all duration-300 shadow-lg hover:-translate-y-0.5"
+                className="inline-flex items-center px-8 py-4 bg-trust-600 text-white font-semibold rounded-xl hover:bg-gold-500 transition-all duration-300 shadow-lg hover:-translate-y-0.5"
             >
               View All Loan Rates
               <ArrowRight className="w-5 h-5 ml-2" />
@@ -390,7 +390,7 @@ const Home = () => {
             <div className="relative z-10 text-center">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
                 Ready to Experience
-                <span className="text-gold-300"> Vysya Co-operative Banking?</span>
+                <span className="text-gold-400"> Vysya Co-operative Banking?</span>
               </h2>
               <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
                 Join thousands of satisfied customers who have transformed their banking experience with us
@@ -398,7 +398,7 @@ const Home = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   to="/contact"
-                  className="px-8 py-4 bg-gold-500 text-white font-bold rounded-xl hover:bg-gold-600 transition-all duration-300 shadow-lg hover:-translate-y-0.5 hover:shadow-xl"
+                  className="px-8 py-4 bg-trust-600 text-white font-bold rounded-xl hover:bg-gold-500 transition-all duration-300 shadow-lg hover:-translate-y-0.5 hover:shadow-xl"
                 >
                   Get Started Today
                 </Link>

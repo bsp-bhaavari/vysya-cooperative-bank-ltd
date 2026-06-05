@@ -150,23 +150,27 @@ const Navbar = () => {
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
       scrolled
-        ? 'bg-white/95 backdrop-blur-md shadow-nav'
-        : 'bg-white shadow-nav'
-    }`}>
-      <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-trust-600 via-gold-500 to-trust-600" />
+        ? 'shadow-lg shadow-black/10'
+        : 'shadow-md shadow-black/8'
+    }`}
+      style={{
+        background: scrolled
+          ? 'linear-gradient(90deg, #0B1F3A 0%, #132D52 100%)'
+          : 'linear-gradient(90deg, #0B1F3A 0%, #132D52 100%)'
+      }}
+    >
+      <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-gold-400/60 via-gold-400 to-gold-400/60" />
       <div className="container-max relative">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <img src={bankLogo} alt="Vysya Co-operative Bank Ltd, Tumakuru" className="h-10 w-auto max-w-[min(9rem,28vw)] object-contain shrink-0 drop-shadow-md rounded-sm" />
+            <img src={bankLogo} alt="Vysya Co-operative Bank Ltd, Tumakuru" className="h-10 w-auto max-w-[min(9rem,28vw)] object-contain shrink-0 drop-shadow-md rounded-sm brightness-0 invert" />
             <div className="leading-tight hidden sm:block">
-              <span className="text-xl font-bold text-trust-900 whitespace-nowrap group-hover:text-trust-700 transition-colors duration-200">
+              <span className="text-xl font-bold text-white whitespace-nowrap group-hover:text-gold-300 transition-colors duration-200">
                 Vysya Cooperative Bank Ltd
               </span>
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6 dropdown-container">
             {navItems.map((item) => (
               <div key={item.name} className="relative">
@@ -174,31 +178,30 @@ const Navbar = () => {
                   <button
                     className={`flex items-center space-x-1 font-medium transition-colors duration-200 ${
                       isActive(item.path)
-                        ? 'text-trust-700 border-b-2 border-trust-600 pb-1'
-                        : 'text-gray-700 hover:text-trust-700'
+                        ? 'text-white border-b-2 border-gold-400 pb-1'
+                        : 'text-white/80 hover:text-white'
                     }`}
                     onClick={() => handleDropdownToggle(item.name)}
                     onMouseEnter={() => setActiveDropdown(item.name)}
                   >
                     {item.name}
-                    <ChevronDown className={`w-4 h-4 ml-1 ${isActive(item.path) ? 'text-trust-600' : 'text-gray-400'}`} />
+                    <ChevronDown className={`w-4 h-4 ml-1 ${isActive(item.path) ? 'text-gold-400' : 'text-white/50'}`} />
                   </button>
                 ) : (
                   <Link
                     to={item.path}
                     className={`font-medium transition-colors duration-200 ${
                       isActive(item.path)
-                        ? 'text-trust-700 border-b-2 border-trust-600 pb-1'
-                        : 'text-gray-700 hover:text-trust-700'
+                        ? 'text-white border-b-2 border-gold-400 pb-1'
+                        : 'text-white/80 hover:text-white'
                     }`}
                   >
                     {item.name}
                   </Link>
                 )}
                 
-                {/* Dropdown Menu */}
                 {item.subItems && item.subItems.length > 0 && activeDropdown === item.name && (
-                  <div className="absolute top-full left-0 mt-1 bg-white rounded-2xl shadow-premium border border-gray-100 border-t-2 border-t-trust-600 min-w-max z-50 overflow-hidden">
+                  <div className="absolute top-full left-0 mt-1 bg-white rounded-2xl shadow-premium border border-gray-100 border-t-2 border-t-gold-400 min-w-max z-50 overflow-hidden">
                     <div className="p-4 bg-white">
                       {item.subItems.map((subItem, index) => (
                         <div key={subItem.name}>
@@ -239,10 +242,9 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Mobile menu button */}
           <button
             type="button"
-            className="md:hidden p-2 rounded-lg text-trust-700 hover:bg-trust-50 border border-gray-200 transition-colors"
+            className="md:hidden p-2 rounded-lg text-white/80 hover:bg-white/10 border border-white/20 transition-colors"
             onClick={() => setIsOpen(!isOpen)}
             aria-expanded={isOpen}
             aria-label={isOpen ? 'Close menu' : 'Open menu'}
@@ -251,9 +253,8 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden absolute top-16 left-0 right-0 bg-white shadow-xl border-t border-gray-200 max-h-[calc(100vh-4rem)] overflow-y-auto">
+          <div className="md:hidden absolute top-16 left-0 right-0 bg-gradient-to-b from-[#0B1F3A] to-[#132D52] shadow-xl border-t border-white/10 max-h-[calc(100vh-4rem)] overflow-y-auto">
             <div className="px-4 py-3 space-y-1">
               {navItems.map((item) => (
                 <div key={item.name}>
@@ -263,13 +264,13 @@ const Navbar = () => {
                         type="button"
                         className={`flex items-center justify-between w-full px-3 py-2 rounded-lg font-medium transition-colors ${
                           isActive(item.path)
-                            ? 'bg-trust-50 text-trust-800 border-l-[3px] border-trust-600'
-                            : 'text-gray-700 hover:bg-gray-50'
+                            ? 'text-gold-400 border-l-[3px] border-gold-400 bg-white/5'
+                            : 'text-white/70 hover:text-white hover:bg-white/5'
                         }`}
                         onClick={() => handleDropdownToggle(item.name)}
                       >
                         {item.name}
-                        <ChevronDown className="w-4 h-4 text-gray-400" />
+                        <ChevronDown className="w-4 h-4 text-white/40" />
                       </button>
                       {activeDropdown === item.name && (
                         <div className="mt-2 ml-4 space-y-2">
@@ -277,7 +278,7 @@ const Navbar = () => {
                             <div key={subItem.name}>
                               {subItem.group ? (
                                 <div>
-                                  <div className="text-xs font-semibold text-trust-600 uppercase tracking-wider mb-2 pb-1 border-b border-gray-200">
+                                  <div className="text-xs font-semibold text-gold-400 uppercase tracking-wider mb-2 pb-1 border-b border-white/10">
                                     {subItem.group}
                                   </div>
                                   <div className="space-y-1">
@@ -285,7 +286,7 @@ const Navbar = () => {
                                       <Link
                                         key={subSubItem.name}
                                         to={subSubItem.path}
-                                        className="block px-3 py-2 rounded-lg text-sm text-gray-600 hover:bg-trust-50 hover:text-trust-700 transition-colors"
+                                        className="block px-3 py-2 rounded-lg text-sm text-white/60 hover:text-white hover:bg-white/5 transition-colors"
                                         onClick={() => setIsOpen(false)}
                                       >
                                         {subSubItem.name}
@@ -297,7 +298,7 @@ const Navbar = () => {
                                 <Link
                                   key={subItem.name}
                                   to={subItem.path}
-                                  className="block px-3 py-2 rounded-lg text-sm text-gray-600 hover:bg-trust-50 hover:text-trust-700 transition-colors"
+                                  className="block px-3 py-2 rounded-lg text-sm text-white/60 hover:text-white hover:bg-white/5 transition-colors"
                                   onClick={() => setIsOpen(false)}
                                 >
                                   {subItem.name}
@@ -313,8 +314,8 @@ const Navbar = () => {
                       to={item.path}
                       className={`block px-3 py-2 rounded-lg font-medium transition-colors ${
                         isActive(item.path)
-                          ? 'bg-trust-50 text-trust-800 border-l-[3px] border-trust-600'
-                          : 'text-gray-700 hover:bg-gray-50'
+                          ? 'text-gold-400 border-l-[3px] border-gold-400 bg-white/5'
+                          : 'text-white/70 hover:text-white hover:bg-white/5'
                       }`}
                       onClick={() => setIsOpen(false)}
                     >

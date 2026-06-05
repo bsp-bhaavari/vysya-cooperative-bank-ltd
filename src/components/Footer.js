@@ -23,7 +23,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative bg-gradient-to-b from-trust-950 via-trust-900 to-trust-950 text-white overflow-hidden border-t-4 border-trust-600">
+    <footer className="relative bg-gradient-to-b from-trust-950 via-trust-900 to-trust-950 text-white overflow-hidden border-t-4 border-gold-400">
       <div className="pointer-events-none absolute inset-0" aria-hidden style={{ backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
       <div className="relative section-padding">
         <div className="container-max">

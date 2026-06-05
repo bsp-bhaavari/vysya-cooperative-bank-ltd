@@ -15,7 +15,7 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col bg-gradient-to-br from-surface-tint via-white to-trust-50/30">
+      <div className="min-h-screen flex flex-col" style={{ backgroundColor: '#F6F8FC' }}>
         <Navbar />
         <main className="flex-grow relative">
           <Routes>

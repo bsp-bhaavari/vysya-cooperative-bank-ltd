@@ -66,7 +66,7 @@ const Gallery = () => {
           <Card key={item.id} className="overflow-hidden group cursor-pointer">
             <div className="aspect-square bg-gray-100 overflow-hidden">
               <img
-                src={item.image}
+                src={`${process.env.PUBLIC_URL}${item.image}`}
                 alt={item.title}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 onError={(e) => {
@@ -96,7 +96,7 @@ const Gallery = () => {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center">
               <img
-                src="/images/gallery/featured.jpg"
+                src={`${process.env.PUBLIC_URL}/images/gallery/featured.jpg`}
                 alt="Featured"
                 className="w-24 h-24 object-cover rounded-full mx-auto mb-3"
                 onError={(e) => { e.target.style.display = 'none'; }}

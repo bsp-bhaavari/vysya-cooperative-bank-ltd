@@ -7,12 +7,13 @@ const Card = ({
   padding = 'p-6',
   ...props 
 }) => {
-  const baseClasses = 'bg-white rounded-2xl border border-gray-100 shadow-card transition-all duration-300';
-  const hoverClasses = hover ? 'hover:shadow-elevated hover:-translate-y-0.5' : '';
+  const baseClasses = 'bg-white rounded-2xl border border-gray-100 transition-all duration-300';
+  const shadowClass = 'shadow-[0_10px_30px_rgba(11,31,58,0.08)]';
+  const hoverClasses = hover ? 'hover:shadow-[0_20px_50px_rgba(11,31,58,0.12)] hover:-translate-y-1' : '';
   
   return (
     <div 
-      className={`${baseClasses} ${hoverClasses} ${padding} ${className}`}
+      className={`${baseClasses} ${shadowClass} ${hoverClasses} ${padding} ${className}`}
       {...props}
     >
       {children}
@@ -33,7 +34,7 @@ export const CardTitle = ({ children, className = '' }) => (
 );
 
 export const CardDescription = ({ children, className = '' }) => (
-  <p className={`text-gray-600 mt-2 leading-relaxed ${className}`}>
+  <p className={`text-secondary mt-2 leading-relaxed ${className}`}>
     {children}
   </p>
 );

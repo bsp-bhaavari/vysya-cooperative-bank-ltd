@@ -54,7 +54,7 @@ const BoardOfDirectors = () => {
           <CardContent>
             <div className="space-y-4">
               <img
-                src="/images/president_Govindaraju_KN_photo.jpg"
+                src={`${process.env.PUBLIC_URL}/images/president_Govindaraju_KN_photo.jpg`}
                 alt="Sri K.N.Govindaraju"
                 className="w-48 h-56 object-contain rounded-lg shadow-md mx-auto bg-gray-100"
               />
@@ -83,7 +83,7 @@ const BoardOfDirectors = () => {
           <CardContent>
             <div className="space-y-4">
               <img
-                src="/images/vice_president_Ramamurthy_KS_photo.jpg"
+                src={`${process.env.PUBLIC_URL}/images/vice_president_Ramamurthy_KS_photo.jpg`}
                 alt="CA Ramamurthy K.S."
                 className="w-48 h-56 object-contain rounded-lg shadow-md mx-auto bg-gray-100"
               />
