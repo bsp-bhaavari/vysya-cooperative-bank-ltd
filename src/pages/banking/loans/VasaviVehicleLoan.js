@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Car, TrendingUp, Shield, Clock } from 'lucide-react';
+import { Car } from 'lucide-react';
 import Card, { CardHeader, CardTitle, CardContent } from '../../../components/Card';
 
 const VasaviVehicleLoan = () => {

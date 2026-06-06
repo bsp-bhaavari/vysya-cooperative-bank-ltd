@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Smartphone, Shield, Clock, CheckCircle, ArrowRight, Download, QrCode } from 'lucide-react';
+import { Smartphone, Shield, Clock, CheckCircle, Download } from 'lucide-react';
 import Card, { CardHeader, CardTitle, CardContent } from '../../components/Card';
 
 const MobileBanking = () => {

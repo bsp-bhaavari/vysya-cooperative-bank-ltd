@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { PiggyBank, TrendingUp, Shield, CreditCard, ArrowRight, CheckCircle } from 'lucide-react';
-import Card, { CardHeader, CardTitle, CardContent, CardFooter } from '../../../components/Card';
+import { PiggyBank, TrendingUp, Shield, CreditCard, CheckCircle } from 'lucide-react';
+import Card, { CardHeader, CardTitle, CardContent } from '../../../components/Card';
 
 const SavingsAccount = () => {
   const features = [

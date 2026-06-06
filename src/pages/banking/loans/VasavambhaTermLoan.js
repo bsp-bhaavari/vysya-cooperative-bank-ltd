@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Calendar, TrendingUp, Shield, Clock } from 'lucide-react';
+import { Calendar } from 'lucide-react';
 import Card, { CardHeader, CardTitle, CardContent } from '../../../components/Card';
 
 const VasavambhaTermLoan = () => {

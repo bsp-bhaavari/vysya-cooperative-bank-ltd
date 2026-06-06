@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CreditCard, Wallet, Home, Car, PiggyBank } from 'lucide-react';
-import Card, { CardHeader, CardTitle, CardContent } from '../../../components/Card';
+import Card, { CardContent } from '../../../components/Card';
 
 const AccountsOverview = () => {
   const accountTypes = [

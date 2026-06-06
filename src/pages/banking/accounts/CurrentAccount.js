@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Building2, TrendingUp, CreditCard, ArrowRight, CheckCircle } from 'lucide-react';
+import { Building2, TrendingUp, CreditCard, CheckCircle } from 'lucide-react';
 import Card, { CardHeader, CardTitle, CardContent } from '../../../components/Card';
 
 const CurrentAccount = () => {
