@@ -187,7 +187,7 @@ const Home = () => {
         
         <div className="relative z-10 text-white p-6 sm:p-8 md:p-12 flex items-center h-full">
           <div className="container-max">
-            <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="grid lg:grid-cols-2 gap-8 items-start">
               <div className="space-y-6 text-left">
                 <div className="inline-flex items-center space-x-2 bg-white/15 backdrop-blur-md border border-white/25 px-4 py-2 rounded-full text-white font-medium shadow-sm">
                   <Star className="w-4 h-4 text-gold-300" />
