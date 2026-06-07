@@ -1,27 +1,12 @@
 import React from 'react';
-import { Download, FileText, Calendar } from 'lucide-react';
+import { Download, FileText } from 'lucide-react';
 import Card, { CardHeader, CardTitle, CardContent } from '../../components/Card';
 
 const FinancialReports = () => {
   const balanceSheets = [
-    {
-      title: 'Balance Sheet March 2023',
-      description: 'Audited balance sheet for the financial year ending March 2023',
-      date: 'March 2023',
-      file: '/reports/balance_sheet_2023.pdf'
-    },
-    {
-      title: 'Balance Sheet March 2024',
-      description: 'Audited balance sheet for the financial year ending March 2024',
-      date: 'March 2024',
-      file: '/reports/balance_sheet_2024.pdf'
-    },
-    {
-      title: 'Balance Sheet March 2025',
-      description: 'Audited balance sheet for the financial year ending March 2025',
-      date: 'March 2025',
-      file: '/reports/balance_sheet_2025.pdf'
-    }
+    { year: '2023', label: 'Financial Year', file: '/reports/BalanceSheet_2023.pdf' },
+    { year: '2024', label: 'Financial Year', file: '/reports/BalanceSheet_2024.pdf' },
+    { year: '2025', label: 'Financial Year', file: '/reports/BalanceSheet_2025.pdf' }
   ];
 
   return (
@@ -59,32 +44,30 @@ const FinancialReports = () => {
           </Card>
 
           <div>
-            <h2 className="text-2xl font-bold text-trust-900 mb-6">Balance Sheets</h2>
-            <div className="grid md:grid-cols-3 gap-6">
+            <h2 className="text-2xl font-bold text-trust-900 mb-6">Balance Sheet Downloads</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {balanceSheets.map((bs, index) => (
-                <Card key={index} className="hover:shadow-premium-sm transition-all duration-300 group">
-                  <CardContent>
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-gradient-to-br from-trust-100 to-trust-50 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform">
-                        <FileText className="w-8 h-8 text-trust-600" />
-                      </div>
-                      <h3 className="text-lg font-semibold text-trust-900 mb-2">{bs.title}</h3>
-                      <p className="text-sm text-gray-600 mb-4">{bs.description}</p>
-                      <div className="flex items-center justify-center space-x-2 text-sm text-gray-500 mb-4">
-                        <Calendar className="w-4 h-4" />
-                        <span>{bs.date}</span>
-                      </div>
-                      <a
-                        href={bs.file}
-                        download
-                        className="inline-flex items-center space-x-2 bg-trust-600 text-white px-5 py-2.5 rounded-lg hover:bg-trust-700 transition-all duration-300 shadow-md hover:-translate-y-0.5"
-                      >
-                        <Download className="w-4 h-4" />
-                        <span>Download</span>
-                      </a>
+                <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105 group">
+                  <div className="h-1.5 bg-gradient-to-r from-teal-500 to-blue-600" />
+                  <div className="p-6 flex flex-col items-center text-center">
+                    <div className="w-14 h-14 bg-teal-50 rounded-full flex items-center justify-center mb-4 group-hover:animate-bounce transition-all">
+                      <FileText className="w-8 h-8 text-teal-600" />
                     </div>
-                  </CardContent>
-                </Card>
+                    <span className="text-4xl font-bold text-trust-900">{bs.year}</span>
+                    <span className="text-sm text-gray-500 mt-1">{bs.label}</span>
+                    <p className="text-base text-gray-700 mt-2 mb-2">Balance Sheet</p>
+                    <span className="text-xs text-gray-400 mb-4">Last Updated: Jan {bs.year}</span>
+                    <a
+                      href={bs.file}
+                      download
+                      className="inline-flex items-center space-x-2 bg-blue-600 text-white font-bold py-2 px-4 rounded-md border-2 border-amber-500 transition-all duration-300 hover:bg-blue-700 hover:border-amber-400"
+                    >
+                      <Download className="w-4 h-4" />
+                      <span>Download PDF</span>
+                    </a>
+                    <span className="mt-2 text-xs text-gray-400">PDF</span>
+                  </div>
+                </div>
               ))}
             </div>
           </div>
