@@ -8,55 +8,55 @@ const Contact = () => {
       name: 'Administrative Office',
       address: 'Dr. Sri Shivakumara Swamiji Circle, BH Road, Tumkur-572102',
       phone: '0816-2279934',
-      email: 'vcbltkr@gmail.com'
+      email: 'ao@vcbltkr.bank.in'
     },
     {
       name: 'Head Office',
       address: 'Brindavan Complex, Vivekananda Road, Tumkur-572101',
       phone: '0816-2278760, 2279846',
-      email: 'vcblho@gmail.com'
+      email: 'ho@vcbltkr.bank.in'
     },
     {
       name: 'APMC Yard Branch (Tumkur)',
       address: 'Dr. Sri Shivakumara Swamiji Circle, B.H. Road, Tumkur-572102',
       phone: '0816-2252630',
-      email: 'vcblapmctmk@gmail.com'
+      email: 'apmc@vcbltkr.bank.in'
     },
     {
       name: 'Vijaynagar (SIT) Extension Branch',
       address: 'Next to 9th Cross, SIT Main Road, Tumkur-572102',
       phone: '0816-2274360',
-      email: 'vcblsit@gmail.com'
+      email: 'sit@vcbltkr.bank.in'
     },
     {
       name: 'Pavagada Branch',
       address: 'Kuvempu Road, Pavagada-561202',
       phone: '08136-244816',
-      email: 'vcblpvg@gmail.com'
+      email: 'pavagada@vcbltkr.bank.in'
     },
     {
       name: 'Madhugiri Branch',
       address: 'T.V.V. Circle, Madhugiri-572132',
       phone: '08137-283221',
-      email: 'vcblmadh@gmail.com'
+      email: 'madhugiri@vcbltkr.bank.in'
     },
     {
       name: 'APMC Yard Branch (Bangalore/Yeshwanthpur)',
       address: '106, 4th Main, APMC, Yeswanthpur, Bengaluru-560022',
       phone: '080-23479575',
-      email: 'vcblapmcb@gmail.com'
+      email: 'apmcb@vcbltkr.bank.in'
     },
     {
       name: 'BVK Iyengar Road Branch (Chickpet)',
       address: '#349, Komarla Towers, 2nd Floor, Balepete Circle, OTC Road, Bengaluru-560053',
       phone: '080-22389263',
-      email: 'vcblbvk@gmail.com'
+      email: 'bvk@vcbltkr.bank.in'
     },
     {
       name: 'Mysore Branch',
       address: '#424, Old Santhepet, Mysore-570024',
       phone: '0821-2429595, 7349610238',
-      email: 'vcblmysore@gmail.com'
+      email: 'mysuru@vcbltkr.bank.in'
     }
   ];
 
