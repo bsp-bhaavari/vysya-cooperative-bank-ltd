@@ -1,51 +1,43 @@
 import React from 'react';
 import Card, { CardHeader, CardTitle, CardContent } from '../../components/Card';
+import Table from '../../components/Table';
 
 const previousBoardMembers = [
-  { name: "Sri K.N.Govindaraju", designation: "President" },
-  { name: "CA Ramamurthy.K.S. B.Com., FCA, DISA (ICAI)", designation: "Vice President" },
-  { name: "Sri K.P.Suresh", designation: "Director" },
-  { name: "Sri M.Nagasundar B.Com.", designation: "Director" },
-  { name: "Sri B.S.Lokanath", designation: "Director" },
-  { name: "Sri Prasoon Makam T.S.", designation: "Director" },
-  { name: "Sri N.V.Balaji", designation: "Director" },
-  { name: "Sri Arun Kumar N.A", designation: "Director" },
-  { name: "Sri Venkataraju.K", designation: "Director" },
-  { name: "Sri Lakshmikantha Setty B", designation: "Director" },
-  { name: "Sri Narasimha Murthy T", designation: "Director" },
-  { name: "Sri Rajashekar K.R.", designation: "Director" },
-  { name: "Sri Sanjay.C.S.", designation: "Director" },
-  { name: "Sri Lakshmipathi D.L.", designation: "Director" },
-  { name: "Sri Parthasarathi T.A.", designation: "Director" },
-  { name: "Sri Raghavendra L.A.", designation: "Director" },
-  { name: "Sri Kanakalakshmi C.B.", designation: "Director" },
-  { name: "Smt. Geetha Balaraju", designation: "Director" },
-  { name: "Smt. Suma S.", designation: "C.E.O" }
+  ['Sri K.N.Govindaraju', 'President'],
+  ['CA Ramamurthy.K.S. B.Com., FCA, DISA (ICAI)', 'Vice President'],
+  ['Sri K.P.Suresh', 'Director'],
+  ['Sri M.Nagasundar B.Com.', 'Director'],
+  ['Sri B.S.Lokanath', 'Director'],
+  ['Sri Prasoon Makam T.S.', 'Director'],
+  ['Sri N.V.Balaji', 'Director'],
+  ['Sri Arun Kumar N.A', 'Director'],
+  ['Sri Venkataraju.K', 'Director'],
+  ['Sri Lakshmikantha Setty B', 'Director'],
+  ['Sri Narasimha Murthy T', 'Director'],
+  ['Sri Rajashekar K.R.', 'Director'],
+  ['Sri Sanjay.C.S.', 'Director'],
+  ['Sri Lakshmipathi D.L.', 'Director'],
+  ['Sri Parthasarathi T.A.', 'Director'],
+  ['Sri Raghavendra L.A.', 'Director'],
+  ['Sri Kanakalakshmi C.B.', 'Director'],
+  ['Smt. Geetha Balaraju', 'Director'],
+  ['Smt. Suma S.', 'C.E.O']
 ];
 
 const foundingBoardMembers = [
-  { name: "Sampangi Ramu.T.A.", designation: "President" },
-  { name: "Shashikumar.T.S.", designation: "Vice-President" },
-  { name: "Nagendra Prasad.N.S.", designation: "Hon'ble Secretary" },
-  { name: "Gurappa Setty.M.K.", designation: "Director" },
-  { name: "Janardhan.K.V.", designation: "Director" },
-  { name: "Manjunath.T.A.", designation: "Director" },
-  { name: "Mohan Kumar.C.R.", designation: "Director" },
-  { name: "Narasimha.N.S.", designation: "Director" },
-  { name: "Rajagopala Setty.N.S.", designation: "Director" },
-  { name: "Subbaraju.N.A.", designation: "Director" },
-  { name: "Ashok Kumar.T.V.", designation: "Director" },
-  { name: "Neelakanta Setty MV", designation: "Director" }
+  ['Sampangi Ramu.T.A.', 'President'],
+  ['Shashikumar.T.S.', 'Vice-President'],
+  ['Nagendra Prasad.N.S.', "Hon'ble Secretary"],
+  ['Gurappa Setty.M.K.', 'Director'],
+  ['Janardhan.K.V.', 'Director'],
+  ['Manjunath.T.A.', 'Director'],
+  ['Mohan Kumar.C.R.', 'Director'],
+  ['Narasimha.N.S.', 'Director'],
+  ['Rajagopala Setty.N.S.', 'Director'],
+  ['Subbaraju.N.A.', 'Director'],
+  ['Ashok Kumar.T.V.', 'Director'],
+  ['Neelakanta Setty MV', 'Director']
 ];
-
-const getRowClass = (designation, index) => {
-  const base = index % 2 === 0 ? 'bg-white' : 'bg-gray-50';
-  if (designation === 'President') return `${base} bg-blue-50 border-l-4 border-l-blue-600`;
-  if (designation === 'Vice President') return `${base} bg-blue-50 border-l-4 border-l-blue-600`;
-  if (designation === 'Vice-President') return `${base} bg-blue-50 border-l-4 border-l-blue-600`;
-  if (designation === 'C.E.O') return `${base} bg-amber-50 border-l-4 border-l-amber-500`;
-  return `${base}`;
-};
 
 const PreviousBoard = () => {
   return (
@@ -94,64 +86,34 @@ const PreviousBoard = () => {
         </CardContent>
       </Card>
 
-      <div>
-        <h2 className="text-2xl font-bold text-trust-900 mb-6">Board Members List</h2>
-        <div className="hidden md:block overflow-hidden rounded-xl border border-gray-200 shadow-sm">
-          <table className="w-full">
-            <thead>
-              <tr className="bg-blue-900 border-b-4 border-amber-500">
-                <th className="text-left py-4 px-6 text-white font-bold text-base w-3/5">Name</th>
-                <th className="text-left py-4 px-6 text-white font-bold text-base w-2/5">Designation</th>
-              </tr>
-            </thead>
-            <tbody>
-              {previousBoardMembers.map((member, index) => (
-                <tr key={index} className={`${getRowClass(member.designation, index)} border-b border-gray-100`}>
-                  <td className="py-4 px-6 font-semibold text-gray-900 text-base">{member.name}</td>
-                  <td className="py-4 px-6 text-gray-600 text-sm">{member.designation}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-        <div className="md:hidden space-y-3">
-          {previousBoardMembers.map((member, index) => (
-            <div key={index} className={`${getRowClass(member.designation, index)} rounded-lg border border-gray-200 p-4 shadow-sm`}>
-              <p className="font-semibold text-gray-900 text-base">{member.name}</p>
-              <p className="text-gray-600 text-sm mt-1">{member.designation}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+      <Card>
+        <CardHeader>
+          <CardTitle>Previous Board Members</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="overflow-x-auto">
+            <Table
+              headers={['Name', 'Designation']}
+              rows={previousBoardMembers}
+            />
+          </div>
+        </CardContent>
+      </Card>
 
       <div className="pt-4 border-t-2 border-gray-200">
-        <h2 className="text-2xl font-bold text-trust-900 mb-6">Board of Directors at the time of establishment (1978)</h2>
-        <div className="hidden md:block overflow-hidden rounded-xl border border-gray-200 shadow-sm">
-          <table className="w-full">
-            <thead>
-              <tr className="bg-blue-900 border-b-4 border-amber-500">
-                <th className="text-left py-4 px-6 text-white font-bold text-base w-3/5">Name</th>
-                <th className="text-left py-4 px-6 text-white font-bold text-base w-2/5">Designation</th>
-              </tr>
-            </thead>
-            <tbody>
-              {foundingBoardMembers.map((member, index) => (
-                <tr key={index} className={`${getRowClass(member.designation, index)} border-b border-gray-100`}>
-                  <td className="py-4 px-6 font-semibold text-gray-900 text-base">{member.name}</td>
-                  <td className="py-4 px-6 text-gray-600 text-sm">{member.designation}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-        <div className="md:hidden space-y-3">
-          {foundingBoardMembers.map((member, index) => (
-            <div key={index} className={`${getRowClass(member.designation, index)} rounded-lg border border-gray-200 p-4 shadow-sm`}>
-              <p className="font-semibold text-gray-900 text-base">{member.name}</p>
-              <p className="text-gray-600 text-sm mt-1">{member.designation}</p>
+        <Card>
+          <CardHeader>
+            <CardTitle>Board of Directors at the time of establishment (1978)</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="overflow-x-auto">
+              <Table
+                headers={['Name', 'Designation']}
+                rows={foundingBoardMembers}
+              />
             </div>
-          ))}
-        </div>
+          </CardContent>
+        </Card>
       </div>
     </div>
   );
