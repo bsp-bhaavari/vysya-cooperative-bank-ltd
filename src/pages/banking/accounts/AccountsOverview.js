@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { CreditCard, Wallet, Home, Car, PiggyBank } from 'lucide-react';
-import Card, { CardContent } from '../../../components/Card';
+import { CreditCard, Wallet, Home, Car, PiggyBank, ChevronRight } from 'lucide-react';
 
 const AccountsOverview = () => {
   const accountTypes = [
@@ -74,35 +73,32 @@ const AccountsOverview = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid sm:grid-cols-2 gap-8 mb-12">
           {accountTypes.map((account, index) => (
-            <Card key={index} className="group cursor-pointer hover:shadow-lg transition-all duration-300">
-              <CardContent>
-                <div className="text-center">
-                  <div className={`w-16 h-16 ${
-                    index % 2 === 0 ? 'bg-trust-50/50' : 'bg-gold-50/50'
-                  } rounded-xl flex items-center justify-center mx-auto mb-4`}>
-                    {React.createElement(account.icon, { className: "w-8 h-8 text-trust-600" })}
+            <Link
+              key={index}
+              to={account.link}
+              className="group relative flex flex-col rounded-xl border border-gray-100 bg-white shadow-soft overflow-hidden transition-all duration-300 hover:shadow-premium-sm hover:-translate-y-1 border-t-4 border-t-blue-600"
+            >
+              <div className="p-6 flex flex-col flex-grow">
+                <div className="flex items-start justify-between gap-4 mb-4">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-blue-50 to-cyan-50 border border-gray-100 shadow-sm transition-transform duration-300 group-hover:scale-105">
+                    {React.createElement(account.icon, { className: "w-6 h-6 text-cyan-600" })}
                   </div>
-                  <h3 className="text-xl font-semibold text-trust-900 mb-3">{account.title}</h3>
-                  <p className="text-gray-600 leading-relaxed mb-4">{account.description}</p>
-                  <div className="space-y-2">
-                    {account.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-green-500 rounded-full flex-shrink-0"></div>
-                        <span className="text-sm text-gray-700">{feature}</span>
-                      </div>
-                    ))}
-                  </div>
-                  <Link
-                    to={account.link}
-                    className="inline-flex items-center text-trust-600 hover:text-trust-700 font-medium group-hover:translate-x-1 transition-all duration-300"
-                  >
-                    Learn More
-                  </Link>
+                  <ChevronRight className="w-5 h-5 text-trust-400 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:text-trust-600 shrink-0 mt-1" />
                 </div>
-              </CardContent>
-            </Card>
+                <h3 className="text-lg font-semibold text-trust-900 group-hover:text-trust-950 transition-colors">
+                  {account.title}
+                </h3>
+                <p className="text-gray-600 text-sm mt-2 leading-relaxed flex-grow">
+                  {account.description}
+                </p>
+                <span className="mt-4 self-end inline-flex items-center text-sm font-medium text-trust-700 group-hover:text-trust-800">
+                  View details
+                  <ChevronRight className="w-4 h-4 ml-1" />
+                </span>
+              </div>
+            </Link>
           ))}
         </div>
 
