@@ -73,7 +73,7 @@ const AccountsOverview = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {accountTypes.map((account, index) => (
             <Link
               key={index}

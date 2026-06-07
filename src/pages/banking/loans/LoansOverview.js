@@ -28,12 +28,6 @@ const LoansOverview = () => {
     { name: 'Vasavambha Overdraft', path: 'vasavambha-overdraft-loan', description: 'Vasavambha overdraft facility' }
   ];
 
-  const cardTopColors = [
-    'border-t-trust-700',
-    'border-t-trust-600',
-    'border-t-gold-500',
-  ];
-
   return (
     <div className="space-y-10">
       <div className="relative overflow-hidden rounded-xl border border-gray-100 bg-gradient-to-br from-white via-surface-tint/50 to-surface-muted/60 p-8 shadow-soft">
@@ -57,7 +51,7 @@ const LoansOverview = () => {
           <Link
             key={loan.path}
             to={`/banking/loans/${loan.path}`}
-            className={`group relative flex flex-col rounded-xl border border-gray-100 bg-card-shine shadow-soft overflow-hidden transition-all duration-300 hover:shadow-premium-sm hover:-translate-y-1 border-t-4 ${cardTopColors[index % cardTopColors.length]}`}
+            className="group relative flex flex-col rounded-xl border border-gray-100 bg-card-shine shadow-soft overflow-hidden transition-all duration-300 hover:shadow-premium-sm hover:-translate-y-1 border-t-4 border-t-blue-600"
           >
             <div className="p-6 flex flex-col flex-grow">
               <div className="flex items-start justify-between gap-4 mb-4">
