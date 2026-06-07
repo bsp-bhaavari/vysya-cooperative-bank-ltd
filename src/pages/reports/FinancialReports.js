@@ -44,7 +44,7 @@ const FinancialReports = () => {
           </Card>
 
           <div>
-            <h2 className="text-2xl font-bold text-trust-900 mb-6">Balance Sheet Downloads</h2>
+            <h2 className="text-2xl font-bold text-trust-900 mb-6">Annual Financial Statements</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {balanceSheets.map((bs, index) => (
                 <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105 group">
@@ -71,36 +71,6 @@ const FinancialReports = () => {
               ))}
             </div>
           </div>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Regulatory Disclosures</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="font-semibold text-trust-900 mb-3">RBI Requirements</h4>
-                  <ul className="space-y-2 text-sm text-gray-700">
-                    <li>• Basel III Disclosure</li>
-                    <li>• Asset Quality Review</li>
-                    <li>• Capital Adequacy Ratio</li>
-                    <li>• Liquidity Coverage Ratio</li>
-                    <li>• Large Exposures</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-trust-900 mb-3">Other Disclosures</h4>
-                  <ul className="space-y-2 text-sm text-gray-700">
-                    <li>• Corporate Governance Report</li>
-                    <li>• Business Responsibility Report</li>
-                    <li>• Shareholding Pattern</li>
-                    <li>• Related Party Transactions</li>
-                    <li>• Management Discussion & Analysis</li>
-                  </ul>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
 
           <Card className="bg-trust-50/50">
             <CardHeader>
