@@ -4,9 +4,9 @@ import Card, { CardHeader, CardTitle, CardContent } from '../../components/Card'
 
 const FinancialReports = () => {
   const balanceSheets = [
-    { year: '2023', label: 'Financial Year', file: '/reports/BalanceSheet_2023.pdf' },
-    { year: '2024', label: 'Financial Year', file: '/reports/BalanceSheet_2024.pdf' },
-    { year: '2025', label: 'Financial Year', file: '/reports/BalanceSheet_2025.pdf' }
+    { year: '2023', label: 'Financial Year', file: '/reports/balance_sheet_2023.pdf' },
+    { year: '2024', label: 'Financial Year', file: '/reports/balance_sheet_2024.pdf' },
+    { year: '2025', label: 'Financial Year', file: '/reports/balance_sheet_2025.pdf' }
   ];
 
   return (
