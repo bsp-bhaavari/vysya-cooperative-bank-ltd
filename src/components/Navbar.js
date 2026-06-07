@@ -163,7 +163,7 @@ const Navbar = () => {
       <div className="container-max relative">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2 group">
-            <img src={bankLogo} alt="Vysya Co-operative Bank Ltd, Tumakuru" className="h-10 w-auto max-w-[min(9rem,28vw)] object-contain shrink-0 drop-shadow-md rounded-sm brightness-0 invert" />
+            <img src={bankLogo} alt="Vysya Co-operative Bank Ltd, Tumakuru" className="h-10 w-auto max-w-[min(9rem,28vw)] object-contain shrink-0 drop-shadow-md rounded-sm " />
             <div className="leading-tight hidden sm:block">
               <span className="text-xl font-bold text-white whitespace-nowrap group-hover:text-gold-300 transition-colors duration-200">
                 Vysya Cooperative Bank Ltd
