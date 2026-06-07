@@ -23,10 +23,26 @@ const previousBoardMembers = [
   { name: "Smt. Suma S.", designation: "C.E.O" }
 ];
 
+const foundingBoardMembers = [
+  { name: "Sampangi Ramu.T.A.", designation: "President" },
+  { name: "Shashikumar.T.S.", designation: "Vice-President" },
+  { name: "Nagendra Prasad.N.S.", designation: "Hon'ble Secretary" },
+  { name: "Gurappa Setty.M.K.", designation: "Director" },
+  { name: "Janardhan.K.V.", designation: "Director" },
+  { name: "Manjunath.T.A.", designation: "Director" },
+  { name: "Mohan Kumar.C.R.", designation: "Director" },
+  { name: "Narasimha.N.S.", designation: "Director" },
+  { name: "Rajagopala Setty.N.S.", designation: "Director" },
+  { name: "Subbaraju.N.A.", designation: "Director" },
+  { name: "Ashok Kumar.T.V.", designation: "Director" },
+  { name: "Neelakanta Setty MV", designation: "Director" }
+];
+
 const getRowClass = (designation, index) => {
   const base = index % 2 === 0 ? 'bg-white' : 'bg-gray-50';
   if (designation === 'President') return `${base} bg-blue-50 border-l-4 border-l-blue-600`;
   if (designation === 'Vice President') return `${base} bg-blue-50 border-l-4 border-l-blue-600`;
+  if (designation === 'Vice-President') return `${base} bg-blue-50 border-l-4 border-l-blue-600`;
   if (designation === 'C.E.O') return `${base} bg-amber-50 border-l-4 border-l-amber-500`;
   return `${base}`;
 };
@@ -100,6 +116,36 @@ const PreviousBoard = () => {
         </div>
         <div className="md:hidden space-y-3">
           {previousBoardMembers.map((member, index) => (
+            <div key={index} className={`${getRowClass(member.designation, index)} rounded-lg border border-gray-200 p-4 shadow-sm`}>
+              <p className="font-semibold text-gray-900 text-base">{member.name}</p>
+              <p className="text-gray-600 text-sm mt-1">{member.designation}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="pt-4 border-t-2 border-gray-200">
+        <h2 className="text-2xl font-bold text-trust-900 mb-6">Board of Directors at the time of establishment (1978)</h2>
+        <div className="hidden md:block overflow-hidden rounded-xl border border-gray-200 shadow-sm">
+          <table className="w-full">
+            <thead>
+              <tr className="bg-blue-900 border-b-4 border-amber-500">
+                <th className="text-left py-4 px-6 text-white font-bold text-base w-3/5">Name</th>
+                <th className="text-left py-4 px-6 text-white font-bold text-base w-2/5">Designation</th>
+              </tr>
+            </thead>
+            <tbody>
+              {foundingBoardMembers.map((member, index) => (
+                <tr key={index} className={`${getRowClass(member.designation, index)} border-b border-gray-100`}>
+                  <td className="py-4 px-6 font-semibold text-gray-900 text-base">{member.name}</td>
+                  <td className="py-4 px-6 text-gray-600 text-sm">{member.designation}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div className="md:hidden space-y-3">
+          {foundingBoardMembers.map((member, index) => (
             <div key={index} className={`${getRowClass(member.designation, index)} rounded-lg border border-gray-200 p-4 shadow-sm`}>
               <p className="font-semibold text-gray-900 text-base">{member.name}</p>
               <p className="text-gray-600 text-sm mt-1">{member.designation}</p>

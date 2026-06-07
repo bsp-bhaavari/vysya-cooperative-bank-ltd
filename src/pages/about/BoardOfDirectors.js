@@ -25,21 +25,6 @@ const BoardOfDirectors = () => {
     ['Smt. Suma.S.', 'C.E.O']
   ];
 
-  const originalBoard = [
-    ['Sampangi Ramu.T.A.', 'President'],
-    ['Shashikumar.T.S.', 'Vice-President'],
-    ['Nagendra Prasad.N.S.', "Hon'ble Secretary"],
-    ['Gurappa Setty.M.K.', 'Director'],
-    ['Janardhan.K.V.', 'Director'],
-    ['Manjunath.T.A.', 'Director'],
-    ['Mohan Kumar.C.R.', 'Director'],
-    ['Narasimha.N.S.', 'Director'],
-    ['Rajagopala Setty.N.S.', 'Director'],
-    ['Subbaraju.N.A.', 'Director'],
-    ['Ashok Kumar.T.V.', 'Director'],
-    ['Neelakanta Setty MV', 'Director']
-  ];
-
   return (
     <div className="space-y-8">
       <div>
@@ -129,19 +114,6 @@ const BoardOfDirectors = () => {
         </CardContent>
       </Card>
 
-      <Card>
-        <CardHeader>
-          <CardTitle>Board of Directors at the time of establishment (1978)</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="overflow-x-auto">
-            <Table
-              headers={['Name', 'Designation']}
-              rows={originalBoard}
-            />
-          </div>
-        </CardContent>
-      </Card>
     </div>
   );
 };
