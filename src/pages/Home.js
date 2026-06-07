@@ -188,30 +188,30 @@ const Home = () => {
         <div className="relative z-10 text-white p-6 sm:p-8 md:p-12 flex items-center h-full">
           <div className="container-max">
             <div className="grid lg:grid-cols-2 gap-8 items-center">
-              <div className="space-y-6">
+              <div className="space-y-6 text-left">
                 <div className="inline-flex items-center space-x-2 bg-white/15 backdrop-blur-md border border-white/25 px-4 py-2 rounded-full text-white font-medium shadow-sm">
                   <Star className="w-4 h-4 text-gold-300" />
                   <span className="text-sm">Trusted by 25,000+ Customers</span>
                 </div>
                 
-                <div className="w-16 h-16 bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-md border border-white/30 rounded-2xl flex items-center justify-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-md border border-white/30 rounded-2xl flex items-center justify-center ml-0">
                   {React.createElement(heroSlides[currentSlide].icon, { className: "w-8 h-8 text-white" })}
                 </div>
                 
-                <div className="space-y-3">
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+                <div className="space-y-3 text-left">
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight text-left">
                     {heroSlides[currentSlide].title}
                   </h1>
-                  <h2 className="text-xl sm:text-2xl md:text-3xl text-white/90 font-light">
+                  <h2 className="text-xl sm:text-2xl md:text-3xl text-white/90 font-light text-left">
                     {heroSlides[currentSlide].subtitle}
                   </h2>
                 </div>
                 
-                <p className="text-lg sm:text-xl md:text-2xl text-white/80 leading-relaxed max-w-2xl">
+                <p className="text-lg sm:text-xl md:text-2xl text-white/80 leading-relaxed max-w-2xl text-left">
                   {heroSlides[currentSlide].description}
                 </p>
                 
-                <div className="grid grid-cols-3 gap-3">
+                <div className="grid grid-cols-3 gap-3 justify-start">
                   {heroSlides[currentSlide].features.map((feature, index) => (
                     <div key={index} className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-3 text-center">
                       <Award className="w-4 h-4 text-emerald-400 mx-auto mb-1" />
@@ -220,7 +220,7 @@ const Home = () => {
                   ))}
                 </div>
                 
-                <div className="flex flex-col sm:flex-row gap-3">
+                <div className="flex flex-col sm:flex-row gap-3 justify-start">
                   <Link
                     to="/contact"
                     className="px-6 py-3 bg-trust-600 text-white font-semibold rounded-lg hover:bg-gold-500 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 text-sm sm:text-base"
