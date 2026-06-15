@@ -64,13 +64,13 @@ const Home = () => {
 
   return (
     <div className="pt-16">
-      <section className="relative h-[40vh] sm:h-[55vh] md:h-[65vh] lg:h-[75vh] xl:h-[80vh] w-full overflow-hidden bg-trust-950">
+      <section className="relative w-full max-w-[1600px] mx-auto aspect-[16/5] overflow-hidden bg-trust-950">
         {heroSlides.map((slide, index) => (
           <img
             key={index}
             src={`${process.env.PUBLIC_URL}${slide.bgImage}`}
             alt=""
-            className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-700 ease-in-out ${
+            className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out ${
               index === currentSlide ? 'opacity-100' : 'opacity-0'
             }`}
             loading={index === 0 ? "eager" : "lazy"}
