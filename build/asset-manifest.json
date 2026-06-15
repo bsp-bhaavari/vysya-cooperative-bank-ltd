@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.4ae2080c.css",
-    "main.js": "/static/js/main.f82f7021.js",
+    "main.js": "/static/js/main.e2362183.js",
     "static/media/bank-logo.png": "/static/media/bank-logo.57aa7d84fe0f121b8fea.png",
     "index.html": "/index.html",
     "main.4ae2080c.css.map": "/static/css/main.4ae2080c.css.map",
-    "main.f82f7021.js.map": "/static/js/main.f82f7021.js.map"
+    "main.e2362183.js.map": "/static/js/main.e2362183.js.map"
   },
   "entrypoints": [
     "static/css/main.4ae2080c.css",
-    "static/js/main.f82f7021.js"
+    "static/js/main.e2362183.js"
   ]
 }
