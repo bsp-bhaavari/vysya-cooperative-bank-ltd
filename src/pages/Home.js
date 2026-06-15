@@ -11,12 +11,12 @@ const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const heroSlides = [
-    { bgImage: "/images/locker-facility.jpeg" },
-    { bgImage: "/images/secure-banking.jpeg" },
+    { bgImage: "/images/locker-facility.png" },
+    { bgImage: "/images/secure-banking.png" },
     { bgImage: "/images/imps-services.png" },
-    { bgImage: "/images/gold-loans.jpg" },
-    { bgImage: "/images/vehicle-loans.jpeg" },
-    { bgImage: "/images/home-loans.jpeg" },
+    { bgImage: "/images/gold-loans.png" },
+    { bgImage: "/images/vehicle-loans.png" },
+    { bgImage: "/images/home-loans.png" },
     { bgImage: "/images/atm-rupay-card.png" }
   ];
 
