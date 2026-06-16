@@ -371,7 +371,7 @@ export const loansData = {
     description: 'Avail Loan up to 90% of the value of your Time Deposit. Low interest rates with zero processing charges. Instead of breaking the FD prematurely, depositors can easily apply for a loan against their FD.',
     features: [
       'Loan up to 90% of the value of your Time Deposit',
-      'Low interest rates (0.5% - 2% above applicable FD rate)',
+      'Low interest rates (1% above applicable FD rate)',
       'Zero processing charges',
       'No need to break FD and suffer loss of interest',
       'Can be repaid as lump sum or in installment',
@@ -556,7 +556,7 @@ export const loansData = {
     features: [
       'For business purpose',
       'Mortgage of immovable property required',
-      'Maximum tenure of 180 months',
+      'Maximum tenure of 120 months',
       'Suitable for established small business',
       'Specific repayment schedule with fixed or floating interest rate'
     ],
@@ -576,17 +576,17 @@ export const loansData = {
     ],
     interestRate: 'As per bank rates',
     maxAmount: 'Depends upon the purpose and property value',
-    maxTenure: '180 months'
+    maxTenure: '120 months'
   },
   vasaviInstallmentLoan: {
     name: 'Vasavi Installment Loan',
     path: '/banking/loans/vasavi-installment-loan',
     icon: 'Star',
-    description: 'This loan will be given for the purpose of business by mortgaging the immovable property of the borrower with maximum tenure of 180 months.',
+    description: 'This loan will be given for the purpose of business by mortgaging the immovable property of the borrower with maximum tenure of 120 months.',
     features: [
       'For business purpose',
       'Mortgage of immovable property required',
-      'Maximum tenure of 180 months',
+      'Maximum tenure of 120 months',
       'Suitable for established small businesses',
       'Based on security, repayment capacity and credit worthiness'
     ],
@@ -602,18 +602,18 @@ export const loansData = {
       'Property documents security'
     ],
     interestRate: 'As per bank rates',
-    maxAmount: 'Depends upon purpose and property value',
-    maxTenure: '180 months'
+    maxAmount: 'Depends upon the purpose and property value',
+    maxTenure: '120 months'
   },
   kannikaInstallmentLoan: {
     name: 'Kannika Installment Loan (KIL)',
     path: '/banking/loans/kannika-installment-loan',
     icon: 'Heart',
-    description: 'This loan will be given for the purpose of business by mortgaging the immovable property of the borrower with maximum tenure of 180 months.',
+    description: 'This loan will be given for the purpose of business by mortgaging the immovable property of the borrower with maximum tenure of 120 months.',
     features: [
       'For business purpose',
       'Mortgage of immovable property required',
-      'Maximum tenure of 180 months',
+      'Maximum tenure of 120 months',
       'Suitable for established small businesses',
       'Based on security, repayment capacity and credit worthiness'
     ],
@@ -835,7 +835,7 @@ export const loansData = {
       'Loan against National Savings Certificate',
       'Up to 80% on the face value of the Bond',
       'Low interest rates compared to personal loans',
-      'Minimal documentation',
+      'Minimum documentation',
       'Tenure of 12 months'
     ],
     eligibility: [

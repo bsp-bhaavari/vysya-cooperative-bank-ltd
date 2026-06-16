@@ -88,7 +88,7 @@ const Branches = () => {
         <CardContent>
           <div className="space-y-1 text-gray-700">
             <p>106, 4th Main, APMC, Yeswanthpur, Bengaluru-560022</p>
-            <p>Phone: 080-23479575 | Email: apmcb@vcbltkr.bank.in</p>
+            <p>Phone: 080-41471670 | Email: apmcb@vcbltkr.bank.in</p>
           </div>
         </CardContent>
       </Card>

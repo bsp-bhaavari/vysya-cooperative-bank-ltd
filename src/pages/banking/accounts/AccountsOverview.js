@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { CreditCard, Wallet, Home, Car, PiggyBank, ChevronRight } from 'lucide-react';
+import { CreditCard, Wallet, Car, PiggyBank, ChevronRight } from 'lucide-react';
 
 const AccountsOverview = () => {
   const accountTypes = [
@@ -17,13 +17,6 @@ const AccountsOverview = () => {
       description: 'Business current account with overdraft facility and unlimited transactions.',
       link: '/banking/accounts/current',
       features: ['Overdraft Facility', 'Unlimited Transactions', 'Business Banking']
-    },
-    {
-      icon: Home,
-      title: 'Term Deposit',
-      description: 'Fixed term deposits with guaranteed returns and flexible tenure options.',
-      link: '/banking/accounts/term-deposit',
-      features: ['Guaranteed Returns', 'Flexible Tenure', 'High Interest']
     },
     {
       icon: PiggyBank,
@@ -46,20 +39,6 @@ const AccountsOverview = () => {
       link: '/banking/accounts/lakshmi-deposit',
       features: ['Devotee Benefits', 'Special Interest Rates', 'Flexible Terms']
     },
-    {
-      icon: PiggyBank,
-      title: 'Kannika Deposit',
-      description: 'Special deposit scheme for Kannika devotees with attractive returns.',
-      link: '/banking/accounts/kannika-deposit',
-      features: ['Devotee Benefits', 'Special Interest Rates', 'Flexible Terms']
-    },
-    {
-      icon: Home,
-      title: 'Pigmy Deposit',
-      description: 'Daily small savings scheme for building substantial corpus over time.',
-      link: '/banking/accounts/pigmy-deposit',
-      features: ['Daily Savings', 'Small Amounts', 'Long-term Benefits']
-    }
   ];
 
   return (

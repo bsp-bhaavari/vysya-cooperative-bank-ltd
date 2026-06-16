@@ -19,6 +19,7 @@ const VisionMission = () => {
             <li>• Let's Join hands together, let's make tomorrow better.</li>
             <li>• Your Trust is our Asset.</li>
             <li>• Do the best for Better Future.</li>
+            <li>• Helping to Grow, Growing to Help</li>
           </ul>
         </CardContent>
       </Card>
@@ -38,8 +39,8 @@ const VisionMission = () => {
             <li>Reduce the Operating Cost — Aiming to bring operating expenditure down to around 150% of Non-Interest Income.</li>
             <li>Focus on Recovery — Focus on recovery of all Non-Performing Assets (NPA) and overdue accounts.</li>
             <li>To Absorb Technology at a Faster Pace — Providing Core Banking, planning ATM, Mobile Banking & Internet Banking.</li>
-            <li>Innovative Services — Fast Cheque Collection, Quick sanction of Pledge, Gold, NSC/LIC Loans, Letter of Credits.</li>
-            <li>Increase Customer Satisfaction — Seven Days Working, Customer Convenience Timing, Extended Time Service, Quick Response, Computer Printed Pass Books.</li>
+            <li>Innovative Services — Fast Cheque Collection, Quick sanction of Pledge, Gold, NSC/LIC Loans, Letter of Credits (Stock, Warehouse Receipt).</li>
+            <li>Increase Customer Satisfaction — Customer Convenience Timing, Extended Time Service, Quick Response, Computer Printed Pass Books.</li>
             <li>Focus on Skill Development — Training programs with RBI, Regional Institute of Co-operative Societies, Karnataka State Co-operative Federation, etc.</li>
           </ol>
         </CardContent>

@@ -19,7 +19,10 @@ const BankingPageTemplate = ({
   type, 
   data, 
   heroImage = null,
-  additionalSections = []
+  additionalSections = [],
+  hideRepaymentDetails = false,
+  processingTime = '2-5 Days',
+  processingResponse = null
 }) => {
   const isLoan = type === 'loan';
   const isAccount = type === 'account';
@@ -172,7 +175,7 @@ const BankingPageTemplate = ({
   };
 
   const renderRepaymentDetails = () => {
-    if (!isLoan || !data.maxTenure) return null;
+    if (!isLoan || !data.maxTenure || hideRepaymentDetails) return null;
     
     return (
       <div className="mb-8">
@@ -192,7 +195,7 @@ const BankingPageTemplate = ({
             </div>
             <div>
               <p className="text-gray-600 mb-2">Processing Time</p>
-              <p className="text-2xl font-bold text-trust-800">2-5 Days</p>
+              <p className="text-2xl font-bold text-trust-800">{processingTime}</p>
             </div>
           </div>
         </div>
@@ -214,7 +217,7 @@ const BankingPageTemplate = ({
       },
       {
         question: `How long does it take to get ${data.name} approval?`,
-        answer: `Typically, loan approval takes 2-5 working days after submission of complete documentation.`
+        answer: processingResponse || `Typically, loan approval takes ${processingTime.toLowerCase()} after submission of complete documentation.`
       },
       {
         question: `What security is required for ${data.name}?`,

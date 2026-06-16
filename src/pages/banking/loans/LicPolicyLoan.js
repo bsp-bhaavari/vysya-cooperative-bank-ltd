@@ -10,7 +10,7 @@ const LicPolicyLoan = () => {
     'Flexible repayment tenure',
     'Quick documentation verification',
     'Higher loan amounts based on policy value',
-    'Minimal processing time',
+    'Minimum processing time',
     'Special benefits for policy holders'
   ];
 

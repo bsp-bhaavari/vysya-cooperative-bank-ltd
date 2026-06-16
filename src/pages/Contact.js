@@ -43,7 +43,7 @@ const Contact = () => {
     {
       name: 'APMC Yard Branch (Bangalore/Yeshwanthpur)',
       address: '106, 4th Main, APMC, Yeswanthpur, Bengaluru-560022',
-      phone: '080-23479575',
+      phone: '080-41471670',
       email: 'apmcb@vcbltkr.bank.in'
     },
     {

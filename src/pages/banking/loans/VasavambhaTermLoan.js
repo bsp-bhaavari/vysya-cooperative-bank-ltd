@@ -9,7 +9,7 @@ const VasavambhaTermLoan = () => {
     'Competitive interest rates',
     'Flexible repayment tenure options',
     'Quick approval process',
-    'Minimal documentation requirements',
+    'Minimum documentation requirements',
     'Higher loan amounts for eligible members',
     'Special benefits for long-term members'
   ];

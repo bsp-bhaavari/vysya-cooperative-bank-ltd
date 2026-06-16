@@ -9,7 +9,7 @@ const KannikaHousingLoan = () => {
     'Competitive interest rates',
     'Flexible repayment tenure up to 30 years',
     'Quick approval process',
-    'Minimal documentation requirements',
+    'Minimum documentation requirements',
     'Higher loan amounts for eligible members',
     'Special benefits for long-term members'
   ];

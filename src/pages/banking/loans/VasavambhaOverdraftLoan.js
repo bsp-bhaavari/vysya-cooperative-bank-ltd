@@ -9,7 +9,7 @@ const VasavambhaOverdraftLoan = () => {
     'Competitive interest rates',
     'Flexible repayment options',
     'Quick approval process',
-    'Minimal documentation requirements',
+    'Minimum documentation requirements',
     'Higher credit limits for eligible members',
     'Special benefits for long-term members'
   ];

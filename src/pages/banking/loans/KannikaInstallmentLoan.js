@@ -9,7 +9,7 @@ const KannikaInstallmentLoan = () => {
     'Affordable interest rates and EMIs',
     'Flexible repayment tenure options',
     'Quick loan processing and approval',
-    'Minimal documentation requirements',
+    'Minimum documentation requirements',
     'Loan amounts based on membership tenure',
     'Special benefits for loyal customers'
   ];

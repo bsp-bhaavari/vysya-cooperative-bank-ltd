@@ -167,7 +167,7 @@ const Home = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-5xl md:text-6xl font-bold text-white mb-4">48+</div>
-              <p className="text-white/90 text-lg">Years of Service</p>
+              <p className="text-white/90 text-lg">Years of Banking Service</p>
             </div>
             <div className="text-center">
               <div className="text-5xl md:text-6xl font-bold text-white mb-4">1+8</div>

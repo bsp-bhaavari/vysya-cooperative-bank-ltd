@@ -11,6 +11,9 @@ export default function DepositLoan() {
         <BankingPageTemplate 
           type="loan" 
           data={data}
+          hideRepaymentDetails={true}
+          processingTime="Immediate"
+          processingResponse="Loan approval is immediate upon submission of complete documentation."
         />
       </div>
     </div>

@@ -6,7 +6,6 @@ import Card, { CardHeader, CardTitle, CardContent } from '../../../components/Ca
 const SavingsAccount = () => {
   const features = [
     'Competitive interest rates',
-    'Zero balance account option',
     'Free debit card facility',
     'Mobile and internet banking',
     'SMS alerts for transactions',
@@ -47,7 +46,7 @@ const SavingsAccount = () => {
         <h1 className="text-3xl font-bold text-trust-900 mb-4">Savings Account</h1>
         <div className="space-y-4 text-gray-700 leading-relaxed">
           <p>
-            A savings account is an interest-bearing deposit account. A savings account is a basic type of bank account that allows you to deposit money, keep it safe, and withdraw funds, all while earning interest on balance on a daily basis. Minimum Balance to be maintained in the Account is ₹500/-
+            A savings account is an interest-bearing deposit account. A savings account is a basic type of bank account that allows you to deposit money, keep it safe, and withdraw funds, all while earning interest on balance on a daily basis. Minimum Balance to be maintained in the Account is ₹1000/-
           </p>
           <p className="font-semibold">Bank allows opening of SB accounts for the following category:</p>
           <ul className="list-disc list-inside space-y-1 ml-4">
@@ -68,11 +67,11 @@ const SavingsAccount = () => {
         <CardContent>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center">
-              <div className="text-2xl font-bold text-trust-600 mb-1">3.5% - 4.0%</div>
+              <div className="text-2xl font-bold text-trust-600 mb-1">2.5%</div>
               <p className="text-gray-600">Interest Rate p.a.</p>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-gold-600 mb-1">₹0</div>
+              <div className="text-2xl font-bold text-gold-600 mb-1">₹1000</div>
               <p className="text-gray-600">Minimum Balance</p>
             </div>
             <div className="text-center">
@@ -170,43 +169,6 @@ const SavingsAccount = () => {
         </Card>
       </div>
 
-      <Card>
-        <CardHeader>
-          <CardTitle>Interest Calculation</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="bg-gray-50 rounded-lg p-6">
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h4 className="font-semibold text-trust-900 mb-3">Interest Rates</h4>
-                <div className="space-y-2">
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Balance up to ₹1 Lakh:</span>
-                    <span className="font-medium">3.5% p.a.</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Balance ₹1 Lakh - ₹5 Lakh:</span>
-                    <span className="font-medium">3.75% p.a.</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Balance above ₹5 Lakh:</span>
-                    <span className="font-medium">4.0% p.a.</span>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <h4 className="font-semibold text-trust-900 mb-3">Calculation Method</h4>
-                <ul className="space-y-2 text-sm text-gray-700">
-                  <li>• Interest calculated on daily balance</li>
-                  <li>• Credited quarterly on March 31, June 30, Sep 30, Dec 31</li>
-                  <li>• TDS applicable as per income tax rules</li>
-                  <li>• No penalty on premature withdrawal</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
 
       <Card className="relative overflow-hidden bg-gradient-to-br from-trust-800 via-trust-900 to-trust-950 text-white border-trust-800/35 shadow-premium" hover={false}>
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-trust-950/30 to-transparent" aria-hidden />

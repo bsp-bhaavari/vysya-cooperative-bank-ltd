@@ -5,18 +5,16 @@ import Card, { CardHeader, CardTitle, CardContent } from '../../../components/Ca
 
 const VasaviVehicleLoan = () => {
   const features = [
-    'Special vehicle loan for Vasavi members',
+    'Special vehicle loan for VCBL Customers',
     'Competitive interest rates',
-    'Flexible repayment tenure up to 7 years',
+    'Flexible repayment tenure up to 5 years',
     'Quick approval process',
-    'Minimal documentation requirements',
-    'Higher loan amounts for eligible members',
-    'Special benefits for loyal customers'
+    'Minimum documentation requirements',
+    'Higher loan amounts for eligible members'
   ];
 
   const eligibility = [
-    'Must be a registered Vasavi member',
-    'Minimum 6 months of membership required',
+    'Must be a registered VCBL Customer',
     'Age between 18-65 years',
     'Regular income source required',
     'Valid driving license mandatory',
@@ -30,7 +28,7 @@ const VasaviVehicleLoan = () => {
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-trust-900 mb-4">Vasavi Vehicle Loan</h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Special vehicle loan scheme designed for Vasavi cooperative members with 
+            Special vehicle loan scheme designed for VCBL Customers with 
             competitive interest rates and flexible repayment options.
           </p>
         </div>

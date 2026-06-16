@@ -5,17 +5,17 @@ import Card, { CardHeader, CardTitle, CardContent } from '../../../components/Ca
 
 const VasaviCashCredit = () => {
   const features = [
-    'Cash credit facility for Vasavi members',
+    'Cash credit facility for VCBL Customers',
     'Competitive interest rates',
     'Flexible repayment options',
     'Quick approval process',
-    'Minimal documentation requirements',
+    'Minimum documentation requirements',
     'Higher credit limits for eligible members',
     'Special benefits for long-term members'
   ];
 
   const eligibility = [
-    'Must be a registered Vasavi member',
+    'Must be a registered VCBL Customer',
     'Minimum 6 months of membership required',
     'Age between 18-65 years',
     'Regular income source required',
@@ -30,7 +30,7 @@ const VasaviCashCredit = () => {
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-trust-900 mb-4">Vasavi Cash Credit</h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Cash credit facility designed for Vasavi cooperative members with 
+            Cash credit facility designed for VCBL Customers with 
             competitive interest rates and flexible repayment options.
           </p>
         </div>
