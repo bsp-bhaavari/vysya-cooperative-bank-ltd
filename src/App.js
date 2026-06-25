@@ -11,6 +11,7 @@ import ReportsLayout from './pages/reports/ReportsLayout';
 import FinancialReports from './pages/reports/FinancialReports';
 import DeafAccounts from './pages/reports/DeafAccounts';
 import Contact from './pages/Contact';
+import CustomerGrievance from './pages/CustomerGrievance';
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
             <Route path="/financial-reports" element={<FinancialReports />} />
             <Route path="/deaf-accounts" element={<DeafAccounts />} />
             
+            {/* Customer Grievance */}
+            <Route path="/customer-grievance" element={<CustomerGrievance />} />
+
             {/* Contact */}
             <Route path="/contact" element={<Contact />} />
           </Routes>

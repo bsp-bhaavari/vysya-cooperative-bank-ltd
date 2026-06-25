@@ -116,6 +116,10 @@ const Navbar = () => {
       ]
     },
     {
+      name: 'Customer Grievance',
+      path: '/customer-grievance',
+    },
+    {
       name: 'Financial Reports',
       path: '/financial-reports',
     },
@@ -165,22 +169,22 @@ const Navbar = () => {
           <Link to="/" className="flex items-center space-x-2 group">
             <img src={bankLogo} alt="Vysya Co-operative Bank Ltd, Tumakuru" className="h-10 w-auto max-w-[min(9rem,28vw)] object-contain shrink-0 drop-shadow-md rounded-sm " />
             <div className="leading-tight hidden sm:block">
-              <span className="text-xl font-bold text-white whitespace-nowrap group-hover:text-gold-300 transition-colors duration-200">
+              <span className="text-lg font-bold text-white whitespace-nowrap group-hover:text-gold-300 transition-colors duration-200">
                 Vysya Cooperative Bank Ltd
               </span>
             </div>
           </Link>
 
-          <div className="hidden md:flex items-center space-x-6 dropdown-container">
+          <div className="hidden md:flex items-center space-x-1.5 dropdown-container">
             {navItems.map((item) => (
               <div key={item.name} className="relative">
                 {item.subItems && item.subItems.length > 0 ? (
                   <button
-                    className={`flex items-center space-x-1 font-medium transition-colors duration-200 ${
-                      isActive(item.path)
-                        ? 'text-white border-b-2 border-gold-400 pb-1'
-                        : 'text-white/80 hover:text-white'
-                    }`}
+                    className={`flex items-center space-x-1 text-xs font-medium transition-colors duration-200 ${
+                       isActive(item.path)
+                         ? 'text-white border-b-2 border-gold-400 pb-1'
+                         : 'text-white/80 hover:text-white'
+                     }`}
                     onClick={() => handleDropdownToggle(item.name)}
                     onMouseEnter={() => setActiveDropdown(item.name)}
                   >
@@ -190,11 +194,11 @@ const Navbar = () => {
                 ) : (
                   <Link
                     to={item.path}
-                    className={`font-medium transition-colors duration-200 ${
-                      isActive(item.path)
-                        ? 'text-white border-b-2 border-gold-400 pb-1'
-                        : 'text-white/80 hover:text-white'
-                    }`}
+                    className={`text-xs font-medium transition-colors duration-200 ${
+                       isActive(item.path)
+                         ? 'text-white border-b-2 border-gold-400 pb-1'
+                         : 'text-white/80 hover:text-white'
+                     }`}
                   >
                     {item.name}
                   </Link>
