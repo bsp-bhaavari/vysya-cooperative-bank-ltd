@@ -175,12 +175,12 @@ const Navbar = () => {
             </div>
           </Link>
 
-          <div className="hidden md:flex items-center space-x-3 dropdown-container">
+          <div className="hidden md:flex items-center space-x-4 dropdown-container">
             {navItems.map((item) => (
               <div key={item.name} className="relative">
                 {item.subItems && item.subItems.length > 0 ? (
                   <button
-                    className={`flex items-center space-x-1 text-xs font-medium transition-colors duration-200 ${
+                    className={`flex items-center space-x-1 text-sm font-medium transition-colors duration-200 ${
                        isActive(item.path)
                          ? 'text-white border-b-2 border-gold-400 pb-1'
                          : 'text-white/80 hover:text-white'
@@ -194,7 +194,7 @@ const Navbar = () => {
                 ) : (
                   <Link
                     to={item.path}
-                    className={`text-xs font-medium transition-colors duration-200 ${
+                    className={`text-sm font-medium transition-colors duration-200 ${
                        isActive(item.path)
                          ? 'text-white border-b-2 border-gold-400 pb-1'
                          : 'text-white/80 hover:text-white'
