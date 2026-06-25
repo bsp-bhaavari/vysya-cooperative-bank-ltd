@@ -175,7 +175,7 @@ const Navbar = () => {
             </div>
           </Link>
 
-          <div className="hidden md:flex items-center space-x-1.5 dropdown-container">
+          <div className="hidden md:flex items-center space-x-3 dropdown-container">
             {navItems.map((item) => (
               <div key={item.name} className="relative">
                 {item.subItems && item.subItems.length > 0 ? (
