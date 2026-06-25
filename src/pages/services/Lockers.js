@@ -298,7 +298,7 @@ const Lockers = () => {
               <div>
                 <h4 className="font-semibold text-trust-900 mb-3">Access Timings</h4>
                 <ul className="space-y-2 text-sm text-gray-700">
-                  <li>• Monday to Friday: 10:00 AM - 4:00 PM</li>
+                  <li>• Monday to Friday: 10:30 AM - 4:00 PM</li>
                   <li>• Saturday: 10:00 AM - 2:00 PM</li>
                   <li>• Sunday: Closed</li>
                   <li>• Prior notice required for access</li>

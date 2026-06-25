@@ -6,18 +6,18 @@ const previousBoardMembers = [
   ['Sri K.N.Govindaraju', 'President'],
   ['CA Ramamurthy.K.S. B.Com., FCA, DISA (ICAI)', 'Vice President'],
   ['Sri K.P.Suresh', 'Director'],
-  ['Sri M.Nagasundar B.Com.', 'Director'],
+  ['CA Nagasundar.M. B.Com., FCA, DISA (ICAI)', 'Director'],
   ['Sri B.S.Lokanath', 'Director'],
   ['Sri Prasoon Makam T.S.', 'Director'],
   ['Sri N.V.Balaji', 'Director'],
   ['Sri Arun Kumar N.A', 'Director'],
   ['Sri Venkataraju.K', 'Director'],
-  ['Sri Lakshmikantha Setty B', 'Director'],
+  ['Sri Lakshmikantha Setty B.A.', 'Director'],
   ['Sri Narasimha Murthy T', 'Director'],
   ['Sri Rajashekar K.R.', 'Director'],
   ['Sri Sanjay.C.S.', 'Director'],
   ['Sri Lakshmipathi D.L.', 'Director'],
-  ['Sri Parthasarathi T.A.', 'Director'],
+  ['Sri Parthasarathy T.A.', 'Director'],
   ['Sri Raghavendra L.A.', 'Director'],
   ['Sri Kanakalakshmi C.B.', 'Director'],
   ['Smt. Geetha Balaraju', 'Director'],
@@ -36,14 +36,14 @@ const foundingBoardMembers = [
   ['Rajagopala Setty.N.S.', 'Director'],
   ['Subbaraju.N.A.', 'Director'],
   ['Ashok Kumar.T.V.', 'Director'],
-  ['Neelakanta Setty MV', 'Director']
+  ['Neelakanta Setty M.V.', 'Director']
 ];
 
 const PreviousBoard = () => {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-3xl font-bold text-trust-900 mb-4">Previous Board Members</h1>
+        <h1 className="text-3xl font-bold text-trust-900 mb-4">Previous Board of Directors</h1>
         <p className="text-lg text-gray-600 leading-relaxed">
           We honor and remember our former board members who have contributed immensely to the growth and 
           success of Vysya Co-operative Bank. Their vision, leadership, and dedication have laid the strong 
@@ -72,7 +72,7 @@ const PreviousBoard = () => {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center">
               <div className="text-3xl font-bold text-trust-600 mb-2">48+</div>
-              <p className="text-gray-600">Years of Service</p>
+              <p className="text-gray-600">Years of Banking Service</p>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-gold-600 mb-2">1 AO + 8</div>
@@ -88,7 +88,7 @@ const PreviousBoard = () => {
 
       <Card>
         <CardHeader>
-          <CardTitle>Previous Board Members</CardTitle>
+          <CardTitle>Previous Board of Directors</CardTitle>
         </CardHeader>
         <CardContent>
           <div className="overflow-x-auto">

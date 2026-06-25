@@ -22,12 +22,6 @@ const History = () => {
             Shri. Sampangiram.T.A. is the founder chairman of Vysya Co-operative Bank Ltd.
           </p>
           <p>
-            Bank has made considerable progress between 1986 and till now, when there were only 256 
-            members having Share capital of ₹1,35,000. Since then, there is considerable increase of 
-            members joining the bank. Now it has Over 11885 Members. Bank celebrated its 44th Anniversary 
-            in 2020.
-          </p>
-          <p>
             Vysya Co-operative Bank Ltd is a fully computerized Bank in Tumkur and Bank is offering good services to its 
             customers and Bank is increasing its profit over the years.
           </p>
@@ -85,6 +79,32 @@ const History = () => {
             <li>• Loans & Advances: ₹1.62 Crores</li>
             <li>• Net Profit: ₹0.20 Crores</li>
           </ul>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Term Loans</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="text-center">
+              <img
+                src={`${process.env.PUBLIC_URL}/images/term_loan_industry.jpg`}
+                alt="Industry"
+                className="w-full h-48 object-cover rounded-lg shadow-md"
+              />
+              <p className="text-gray-700 mt-2 font-semibold">Industry</p>
+            </div>
+            <div className="text-center">
+              <img
+                src={`${process.env.PUBLIC_URL}/images/term_loan_commercial.jpg`}
+                alt="Commercial Complex"
+                className="w-full h-48 object-cover rounded-lg shadow-md"
+              />
+              <p className="text-gray-700 mt-2 font-semibold">Commercial Complex</p>
+            </div>
+          </div>
         </CardContent>
       </Card>
 

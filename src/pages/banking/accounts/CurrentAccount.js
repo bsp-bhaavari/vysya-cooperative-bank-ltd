@@ -70,7 +70,7 @@ const CurrentAccount = () => {
         <CardContent>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center">
-              <div className="text-2xl font-bold text-trust-600 mb-1">₹10,000</div>
+              <div className="text-2xl font-bold text-trust-600 mb-1">₹2,000</div>
               <p className="text-gray-600">Minimum Balance</p>
             </div>
             <div className="text-center">

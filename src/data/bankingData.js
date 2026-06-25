@@ -132,12 +132,11 @@ export const accountsData = {
     features: [
       'Account can be opened with a minimum of Rs.500/-',
       'Minimum period of 15 days and up to 120 months',
-      'Interest paid Monthly/Quarterly/Half Yearly or along with principal on maturity',
-      'Loan granted up to 85% of the deposit amount against pledge',
+      'Interest paid Monthly/Quarterly or along with principal on maturity',
+      'Loan granted up to 90% of the deposit amount against pledge',
       'Convenient for parking short term surplus funds from 30 days to 1 year',
       'Through ECS/NEFT/IMPS, interest can be credited to any account',
-      'Nomination facility available',
-      'Minimum amount of Deposit: Rs. 100/-'
+      'Nomination facility available'
     ],
     eligibility: [
       'Any Individuals, Firms, Corporate Bodies, Associations etc.'
@@ -157,6 +156,7 @@ export const accountsData = {
     icon: 'Repeat',
     description: 'A recurring deposit is a special kind of term deposit which helps people with regular incomes to deposit a fixed amount every month into their account and earn interest at the rate applicable to fixed deposits.',
     features: [
+      'It is a Cumulative Deposit',
       'Small savings Flexi Recurring Deposit scheme',
       'Open to Individuals, Minors, Regd. Co-op. Societies, Regd. Public Trusts, HUFs',
       'Minimum tenure of 12 months to maximum of 120 months',
@@ -164,7 +164,7 @@ export const accountsData = {
       'Mandatory to deposit core deposit amount every month',
       'Compound interest on quarterly basis',
       'Installments can be paid by Standing instructions from SB/CA account',
-      'Loan/Overdraft up to 85% available against balance',
+      'Loan/Overdraft up to 90% available against balance',
       'Nomination facility is available'
     ],
     eligibility: [
@@ -385,7 +385,7 @@ export const loansData = {
       'KYC documents of depositor if not submitted earlier'
     ],
     interestRate: '1% over the interest payable on term deposit',
-    maxAmount: '85% of face value of deposit or 75% of principal + interest, whichever is higher',
+    maxAmount: 'Avail Loan up to 90%',
     maxTenure: 'Remaining period of maturity of deposit'
   },
   goldLoan: {
@@ -437,8 +437,8 @@ export const loansData = {
       'KYC documents'
     ],
     interestRate: 'As per bank rates',
-    maxAmount: '70-80% of goods value',
-    maxTenure: '3 months'
+    maxAmount: '75% of goods value',
+    maxTenure: '90 Days'
   },
   warehouseLoan: {
     name: 'Warehouse Receipt Loan',
@@ -501,9 +501,8 @@ export const loansData = {
     icon: 'Car',
     description: 'Hypothecation Loan will be sanctioned to purchase a new or an old vehicle, by hypothecating the same for personal or commercial use.',
     features: [
-      'For purchase of new or old vehicle',
       'Margin: For commercial - 25% of invoice cost',
-      'Two wheeler: 36 months, Auto Car: 60 months',
+      'Two wheeler: 36 months, Auto, Commercial Car: 60 months',
       'Hypothecation of vehicle to be purchased',
       'Competitive rate on daily reducing balance',
       'No prepayment penalty'
@@ -578,60 +577,6 @@ export const loansData = {
     maxAmount: 'Depends upon the purpose and property value',
     maxTenure: '120 months'
   },
-  vasaviInstallmentLoan: {
-    name: 'Vasavi Installment Loan',
-    path: '/banking/loans/vasavi-installment-loan',
-    icon: 'Star',
-    description: 'This loan will be given for the purpose of business by mortgaging the immovable property of the borrower with maximum tenure of 120 months.',
-    features: [
-      'For business purpose',
-      'Mortgage of immovable property required',
-      'Maximum tenure of 120 months',
-      'Suitable for established small businesses',
-      'Based on security, repayment capacity and credit worthiness'
-    ],
-    eligibility: [
-      'People engaged in trade, commerce & business',
-      'Proprietary firms, partnership firms, companies'
-    ],
-    documents: [
-      '3 years IT returns with audited balance sheet',
-      'Project report',
-      'Firm registration',
-      'GST copy',
-      'Property documents security'
-    ],
-    interestRate: 'As per bank rates',
-    maxAmount: 'Depends upon the purpose and property value',
-    maxTenure: '120 months'
-  },
-  kannikaInstallmentLoan: {
-    name: 'Kannika Installment Loan (KIL)',
-    path: '/banking/loans/kannika-installment-loan',
-    icon: 'Heart',
-    description: 'This loan will be given for the purpose of business by mortgaging the immovable property of the borrower with maximum tenure of 120 months.',
-    features: [
-      'For business purpose',
-      'Mortgage of immovable property required',
-      'Maximum tenure of 120 months',
-      'Suitable for established small businesses',
-      'Based on security, repayment capacity and credit worthiness'
-    ],
-    eligibility: [
-      'People engaged in trade, commerce & business',
-      'Proprietary firms, partnership firms, companies'
-    ],
-    documents: [
-      '3 years IT returns with audited balance sheet',
-      'Project report',
-      'Firm registration',
-      'GST copy',
-      'Property documents security'
-    ],
-    interestRate: 'As per bank rates',
-    maxAmount: 'Depends upon purpose and property value',
-    maxTenure: '180 months'
-  },
   generalHousingLoan: {
     name: 'Vasavi General Housing Loan (VGHL)',
     path: '/banking/loans/housing-loan',
@@ -665,58 +610,6 @@ export const loansData = {
     ],
     interestRate: 'As per bank rates',
     maxAmount: 'Rs.70.00 lacs for individual house',
-    maxTenure: '240 months'
-  },
-  kannikaHousingLoan: {
-    name: 'Kannika Housing Loan (KHL)',
-    path: '/banking/loans/kannika-housing-loan',
-    icon: 'Heart',
-    description: 'The Bank sanctions loans to build a house for the purpose of residence. Maximum tenure of this Loan is 180 months.',
-    features: [
-      'For construction/purchase of residential house',
-      'Maximum tenure of 180 months',
-      'Property as security',
-      'Competitive interest rates'
-    ],
-    eligibility: [
-      'Individuals (singly/Jointly)',
-      'At least 21 years of age'
-    ],
-    documents: [
-      'Identity and address proof',
-      'Income Tax Returns for the last three years',
-      'Property documents',
-      'Sanctioned plan for construction',
-      '6 months bank statements'
-    ],
-    interestRate: 'As per bank rates',
-    maxAmount: 'Rs.70.00 lacs',
-    maxTenure: '240 months'
-  },
-  vasaviHousingLoan: {
-    name: 'Vasavi Housing Loan',
-    path: '/banking/loans/vasavi-housing-loan',
-    icon: 'Star',
-    description: 'The Bank sanctions loans to build a house for the purpose of residence. Maximum tenure of this Loan is 180 months.',
-    features: [
-      'For construction/purchase of residential house',
-      'Maximum tenure of 180 months',
-      'Property as security',
-      'Competitive interest rates'
-    ],
-    eligibility: [
-      'Individuals (singly/Jointly)',
-      'At least 21 years of age'
-    ],
-    documents: [
-      'Identity and address proof',
-      'Income Tax Returns for the last three years',
-      'Property documents',
-      'Sanctioned plan for construction',
-      '6 months bank statements'
-    ],
-    interestRate: 'As per bank rates',
-    maxAmount: 'Rs.70.00 lacs',
     maxTenure: '240 months'
   },
   vasavambhaTermLoan: {
@@ -797,7 +690,7 @@ export const loansData = {
     ],
     interestRate: 'As per bank rates',
     maxAmount: 'Depends on valuation',
-    maxTenure: '120 months'
+    maxTenure: '60 months'
   },
   vasavambhaOverdraftLoan: {
     name: 'Vasavambha Overdraft Loan',
@@ -1295,7 +1188,8 @@ export const interestRatesData = {
     {
       depositName: '50 Lakhs & Above (1–5 Years)',
       interestRate: '7.50%',
-      tenure: '1–5 Years'
+      tenure: '1–5 Years',
+      note: 'Bulk Deposit, Fixed Deposit only'
     }
   ]
 };

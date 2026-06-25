@@ -6,7 +6,7 @@ import Card, { CardHeader, CardTitle, CardContent } from '../../../components/Ca
 const SavingsAccount = () => {
   const features = [
     'Competitive interest rates',
-    'Free debit card facility',
+    'Free debit card facility (Very Shortly)',
     'Mobile and internet banking',
     'SMS alerts for transactions',
     'Nomination facility available',

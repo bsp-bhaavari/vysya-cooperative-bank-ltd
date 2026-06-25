@@ -7,11 +7,12 @@ import { interestRatesData } from '../../data/bankingData';
 const DepositRates = () => {
   const depositRates = interestRatesData.deposits;
 
-  const tableHeaders = ['Tenure', 'Interest Rate'];
+  const tableHeaders = ['Tenure', 'Interest Rate', 'Notes'];
 
   const tableData = (depositRates || []).map(deposit => [
     deposit.depositName,
-    deposit.interestRate
+    deposit.interestRate,
+    deposit.note || ''
   ]);
 
   const importantNotes = [

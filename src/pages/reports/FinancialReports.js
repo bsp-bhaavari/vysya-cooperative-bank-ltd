@@ -6,7 +6,8 @@ const FinancialReports = () => {
   const balanceSheets = [
     { year: '2023', label: 'Financial Year', file: '/reports/balance_sheet_2023.pdf' },
     { year: '2024', label: 'Financial Year', file: '/reports/balance_sheet_2024.pdf' },
-    { year: '2025', label: 'Financial Year', file: '/reports/balance_sheet_2025.pdf' }
+    { year: '2025', label: 'Financial Year', file: '/reports/balance_sheet_2025.pdf' },
+    { year: '2026', label: 'Financial Year', file: '/reports/balance_sheet_2026.pdf' }
   ];
 
   return (
@@ -60,6 +61,8 @@ const FinancialReports = () => {
                     <a
                       href={bs.file}
                       download
+                      target="_blank"
+                      rel="noreferrer"
                       className="inline-flex items-center space-x-2 bg-blue-600 text-white font-bold py-2 px-4 rounded-md border-2 border-amber-500 transition-all duration-300 hover:bg-blue-700 hover:border-amber-400"
                     >
                       <Download className="w-4 h-4" />

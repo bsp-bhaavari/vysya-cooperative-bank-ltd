@@ -12,14 +12,10 @@ import PigmyDeposit from './accounts/PigmyDeposit';
 import LoansOverview from './loans/LoansOverview';
 import JointLoan from './loans/JointLoan';
 import InstallmentLoan from './loans/InstallmentLoan';
-import VasaviInstallmentLoan from './loans/VasaviInstallmentLoan';
-import KannikaInstallmentLoan from './loans/KannikaInstallmentLoan';
 import VehicleLoan from './loans/VehicleLoan';
 import VasaviVehicleLoan from './loans/VasaviVehicleLoan';
 import NsclLoan from './loans/NsclLoan';
 import LicPolicyLoan from './loans/LicPolicyLoan';
-import VasaviHousingLoan from './loans/VasaviHousingLoan';
-import KannikaHousingLoan from './loans/KannikaHousingLoan';
 import HousingLoan from './loans/HousingLoan';
 import MachineryLoan from './loans/MachineryLoan';
 import GoldLoan from './loans/GoldLoan';
@@ -55,15 +51,11 @@ const BankingLayout = () => {
       children: [
         { name: 'Joint Loan', path: '/banking/loans/joint-loan' },
         { name: 'Installment Loan', path: '/banking/loans/installment-loan' },
-        { name: 'Vasavi Installment Loan', path: '/banking/loans/vasavi-installment-loan' },
-        { name: 'Kannika Installment Loan', path: '/banking/loans/kannika-installment-loan' },
         { name: 'Vehicle Loan', path: '/banking/loans/vehicle-loan' },
         { name: 'Vasavi Vehicle Loan', path: '/banking/loans/vasavi-vehicle-loan' },
         { name: 'NSCL Loan', path: '/banking/loans/nscl-loan' },
         { name: 'LIC Policy Loan', path: '/banking/loans/lic-policy-loan' },
         { name: 'General Housing Loan', path: '/banking/loans/housing-loan' },
-        { name: 'Vasavi Housing Loan', path: '/banking/loans/vasavi-housing-loan' },
-        { name: 'Kannika Housing Loan', path: '/banking/loans/kannika-housing-loan' },
         { name: 'Machinery Loan', path: '/banking/loans/machinery-loan' },
         { name: 'Gold Loan', path: '/banking/loans/gold-loan' },
         { name: 'Sri Lakshmi Cash Credit', path: '/banking/loans/sri-lakshmi-cash-credit' },
@@ -103,15 +95,11 @@ const BankingLayout = () => {
                 <Route path="loans" element={<LoansOverview />} />
                 <Route path="loans/joint-loan" element={<JointLoan />} />
                 <Route path="loans/installment-loan" element={<InstallmentLoan />} />
-                <Route path="loans/vasavi-installment-loan" element={<VasaviInstallmentLoan />} />
-                <Route path="loans/kannika-installment-loan" element={<KannikaInstallmentLoan />} />
                 <Route path="loans/vehicle-loan" element={<VehicleLoan />} />
                 <Route path="loans/vasavi-vehicle-loan" element={<VasaviVehicleLoan />} />
                 <Route path="loans/nscl-loan" element={<NsclLoan />} />
                 <Route path="loans/lic-policy-loan" element={<LicPolicyLoan />} />
                 <Route path="loans/housing-loan" element={<HousingLoan />} />
-                <Route path="loans/vasavi-housing-loan" element={<VasaviHousingLoan />} />
-                <Route path="loans/kannika-housing-loan" element={<KannikaHousingLoan />} />
                 <Route path="loans/machinery-loan" element={<MachineryLoan />} />
                 <Route path="loans/gold-loan" element={<GoldLoan />} />
                 <Route path="loans/sri-lakshmi-cash-credit" element={<SriLakshmiCashCredit />} />

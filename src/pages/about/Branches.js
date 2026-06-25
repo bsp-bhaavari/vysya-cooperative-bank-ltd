@@ -14,7 +14,7 @@ const Branches = () => {
         </CardHeader>
         <CardContent>
           <div className="space-y-1 text-gray-700">
-            <p>Dr. Sri Shivakumara Swamiji Circle, BH Road, Tumkur-572102</p>
+            <p>Dr. Sri Sri Shivakumara Swamiji Circle, BH Road, Tumkur-572102</p>
             <p>Phone: 0816-2279934 | Email: ao@vcbltkr.bank.in</p>
             <p>GSTIN: 29AAAJV0024D1ZG | PAN: AAAJV0024D</p>
           </div>
@@ -28,7 +28,7 @@ const Branches = () => {
         <CardContent>
           <div className="space-y-1 text-gray-700">
             <p>Brindavan Complex, Vivekananda Road, Tumkur-572101</p>
-            <p>Phone: 0816-2278760, 2279846 | Fax: 2254161 | Email: ho@vcbltkr.bank.in</p>
+            <p>Phone: 0816-2278760 | Email: ho@vcbltkr.bank.in</p>
           </div>
         </CardContent>
       </Card>
@@ -39,7 +39,7 @@ const Branches = () => {
         </CardHeader>
         <CardContent>
           <div className="space-y-1 text-gray-700">
-            <p>Dr. Sri Shivakumara Swamiji Circle, B.H. Road, Tumkur-572102</p>
+            <p>Dr. Sri Sri Shivakumara Swamiji Circle, B.H. Road, Tumkur-572102</p>
             <p>Phone: 0816-2252630 | Email: apmc@vcbltkr.bank.in</p>
           </div>
         </CardContent>
@@ -87,7 +87,7 @@ const Branches = () => {
         </CardHeader>
         <CardContent>
           <div className="space-y-1 text-gray-700">
-            <p>106, 4th Main, APMC, Yeswanthpur, Bengaluru-560022</p>
+            <p>1 St floor, 106, 4th Main, APMC, Yeswanthpur, Bengaluru-560022</p>
             <p>Phone: 080-41471670 | Email: apmcb@vcbltkr.bank.in</p>
           </div>
         </CardContent>

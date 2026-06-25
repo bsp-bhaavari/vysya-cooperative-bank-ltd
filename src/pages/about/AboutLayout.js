@@ -25,7 +25,7 @@ const AboutLayout = () => {
       path: '/about/board-of-directors',
     },
     {
-      name: 'Previous Board',
+      name: 'Previous Board of Directors',
       path: '/about/previous-board',
     },
     {

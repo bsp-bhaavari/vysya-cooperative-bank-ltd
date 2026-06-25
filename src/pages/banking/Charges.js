@@ -104,7 +104,7 @@ const Charges = () => {
       </div>
 
       <div>
-        <h2 className="text-2xl font-bold text-trust-900 mb-6">RTGS Charges (5 RTGS Free per month)</h2>
+        <h2 className="text-2xl font-bold text-trust-900 mb-6">RTGS Charges</h2>
         <Table
           headers={['Amount', 'Charges', 'Frequency']}
           rows={rtgsCharges}
