@@ -116,16 +116,16 @@ const Navbar = () => {
       ]
     },
     {
-      name: 'Customer Grievance',
-      path: '/customer-grievance',
-    },
-    {
       name: 'Financial Reports',
       path: '/financial-reports',
     },
     {
       name: 'DEAF Accounts',
       path: '/deaf-accounts',
+    },
+    {
+      name: 'Customer Grievance',
+      path: '/customer-grievance',
     },
     {
       name: 'Contact Us',
