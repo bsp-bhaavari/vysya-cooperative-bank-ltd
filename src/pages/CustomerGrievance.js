@@ -11,11 +11,18 @@ const CustomerGrievance = () => {
           </p>
         </div>
 
-        <div className="w-full max-w-5xl mx-auto">
+        <div className="w-full max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="w-full bg-white rounded-2xl border border-gray-100 shadow-[0_10px_30px_rgba(11,31,58,0.08)] overflow-hidden p-2 md:p-4">
             <img
               src="/images/customer-grievance-form.jpg"
               alt="Customer Grievance Form"
+              className="w-full h-auto object-contain rounded-lg"
+            />
+          </div>
+          <div className="w-full bg-white rounded-2xl border border-gray-100 shadow-[0_10px_30px_rgba(11,31,58,0.08)] overflow-hidden p-2 md:p-4">
+            <img
+              src="/assets/customer-grievance-photo-2.png"
+              alt="Customer Grievance Form - Additional Details"
               className="w-full h-auto object-contain rounded-lg"
             />
           </div>
