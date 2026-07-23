@@ -11,7 +11,7 @@ const CustomerGrievance = () => {
           </p>
         </div>
 
-        <div className="w-full max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="w-full max-w-5xl mx-auto flex flex-col gap-6">
           <div className="w-full bg-white rounded-2xl border border-gray-100 shadow-[0_10px_30px_rgba(11,31,58,0.08)] overflow-hidden p-2 md:p-4">
             <img
               src="/images/customer-grievance-form.jpg"
@@ -21,7 +21,7 @@ const CustomerGrievance = () => {
           </div>
           <div className="w-full bg-white rounded-2xl border border-gray-100 shadow-[0_10px_30px_rgba(11,31,58,0.08)] overflow-hidden p-2 md:p-4">
             <img
-              src="/src/assets/customer-grievance-photo-2.png"
+              src="/src/assets/customer-grievance-photo-2.jpg"
               alt="Customer Grievance Form - Additional Details"
               className="w-full h-auto object-contain rounded-lg"
             />
