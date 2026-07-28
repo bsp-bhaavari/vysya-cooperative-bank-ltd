@@ -4,7 +4,8 @@ import {
   ChevronLeft, 
   ChevronRight,
   ArrowRight,
-  Percent
+  Percent,
+  Download
 } from 'lucide-react';
 
 const Home = () => {
@@ -142,6 +143,17 @@ const Home = () => {
               With a strong foundation of trust and customer satisfaction, we continue to grow and evolve, 
               always keeping your financial well-being at the heart of everything we do.
             </p>
+          </div>
+
+          <div className="mb-8">
+            <a
+              href={`${process.env.PUBLIC_URL}/reports/general-body-meeting-invitation.pdf`}
+              download
+              className="inline-flex items-center gap-2 px-6 py-3 bg-trust-800 text-white rounded-lg hover:bg-trust-700 transition-colors duration-300 shadow-md hover:shadow-lg"
+            >
+              <Download className="w-5 h-5" />
+              <span className="text-sm font-medium">Invitation for General Body Meeting</span>
+            </a>
           </div>
         </div>
       </section>
