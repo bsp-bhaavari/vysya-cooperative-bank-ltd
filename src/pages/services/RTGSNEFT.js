@@ -6,7 +6,6 @@ import Card, { CardHeader, CardTitle, CardContent } from '../../components/Card'
 const RTGSNEFT = () => {
   const features = [
     'Secure fund transfer to any bank account',
-    '5 RTGS Free per month',
     'Available through all banking channels',
     'Real-time transaction tracking',
     'Confirmation via SMS and email',
@@ -37,7 +36,7 @@ const RTGSNEFT = () => {
 
       <p className="text-lg text-gray-600 leading-relaxed">
         Transfer funds securely to any bank account in India using our RTGS (Real Time Gross Settlement) 
-        and NEFT (National Electronic Funds Transfer) services. 5 RTGS transactions free per month.
+        and NEFT (National Electronic Funds Transfer) services.
       </p>
 
       <Card className="bg-gradient-to-r from-trust-50/50 to-gold-50/50">
@@ -45,11 +44,7 @@ const RTGSNEFT = () => {
           <CardTitle>Service Highlights</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="grid md:grid-cols-4 gap-6">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-trust-600 mb-1">5 Free</div>
-              <p className="text-gray-600">RTGS/month</p>
-            </div>
+          <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center">
               <div className="text-2xl font-bold text-gold-600 mb-1">24/7</div>
               <p className="text-gray-600">Availability</p>
