@@ -158,7 +158,7 @@ export const accountsData = {
     features: [
       'It is a Cumulative Deposit',
       'Small savings Flexi Recurring Deposit scheme',
-      'Open to Individuals, Minors, Regd. Co-op. Societies, Regd. Public Trusts, HUFs',
+      'Open to Individuals and Minors',
       'Minimum tenure of 12 months to maximum of 120 months',
       'Minimum core deposit amount of Rs. 100/-',
       'Mandatory to deposit core deposit amount every month',

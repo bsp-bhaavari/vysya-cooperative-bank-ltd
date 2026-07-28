@@ -45,7 +45,11 @@ const BoardOfDirectors = () => {
                 className="w-48 h-56 object-contain rounded-lg shadow-md mx-auto bg-gray-100"
               />
               <div className="text-center">
-                <h3 className="text-xl font-bold text-trust-900">Sahakara Rathna Awardee Sri K.N.Govindaraju B.E.</h3>
+                <h3 className="text-xl font-bold text-trust-900">
+                  Sahakara Rathna Awardee
+                  <br />
+                  Sri K.N.Govindaraju <small className="text-sm font-normal">B.E.</small>
+                </h3>
                 <p className="text-trust-600 font-semibold">President</p>
               </div>
               <div className="space-y-2 text-gray-700 mt-4">
