@@ -8,21 +8,21 @@ const History = () => {
         <h1 className="text-3xl font-bold text-trust-900 mb-4">Our History</h1>
         <div className="space-y-6 text-gray-700 leading-relaxed">
           <p>
-            Vysya Co-operative Bank Limited is a leading Urban Co-operative Bank in the State, 
+            Vysya Co-operative Bank Ltd., is a leading Urban Co-operative Bank in the State, 
             functioning with its Administrative Office at TUMKUR. The Bank is promoted by the Vysya 
             Community of Tumkur city and was established in the Year 1978.
           </p>
           <p>
-            Vysya Co-operative Bank Ltd was incorporated in 1978 by registering at Mysore, State Co-operative 
+            Vysya Co-operative Bank Ltd., was incorporated in 1978 by registering at Mysore, State Co-operative 
             Registrar Office with Register No. 270 with 275 members and authorized capital of ₹5.00 
-            lakhs. In the beginning years, Vysya Co-operative Bank Ltd carried out its banking operation under the guidance 
+            lakhs. In the beginning years, Vysya Co-operative Bank Ltd., carried out its banking operation under the guidance 
             of Bangalore Grain Merchant Co-operative Bank Limited.
           </p>
           <p>
-            Shri. Sampangiram.T.A. is the founder chairman of Vysya Co-operative Bank Ltd.
+            Shri. Sampangiram.T.A. is the founder chairman of Vysya Co-operative Bank Ltd.,
           </p>
           <p>
-            Vysya Co-operative Bank Ltd is a fully computerized Bank in Tumkur and Bank is offering good services to its 
+            Vysya Co-operative Bank Ltd., is a fully computerized Bank in Tumkur and Bank is offering good services to its 
             customers and Bank is increasing its profit over the years.
           </p>
         </div>

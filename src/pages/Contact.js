@@ -67,7 +67,7 @@ const Contact = () => {
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-trust-900 mb-4">Contact Us</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Get in touch with Vysya Co-operative Bank Ltd. for all your banking needs.
+               Get in touch with Vysya Co-operative Bank Ltd., for all your banking needs.
             </p>
           </div>
 

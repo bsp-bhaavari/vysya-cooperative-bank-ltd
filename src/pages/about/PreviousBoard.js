@@ -46,7 +46,7 @@ const PreviousBoard = () => {
         <h1 className="text-3xl font-bold text-trust-900 mb-4">Previous Board of Directors</h1>
         <p className="text-lg text-gray-600 leading-relaxed">
           We honor and remember our former board members who have contributed immensely to the growth and 
-          success of Vysya Co-operative Bank. Their vision, leadership, and dedication have laid the strong 
+          success of Vysya Co-operative Bank Ltd., Their vision, leadership, and dedication have laid the strong 
           foundation on which we continue to build and serve our community.
         </p>
       </div>
@@ -57,7 +57,7 @@ const PreviousBoard = () => {
         </CardHeader>
         <CardContent>
           <p className="text-gray-700 leading-relaxed">
-            The success of Vysya Co-operative Bank today stands on the shoulders of exceptional leaders 
+            The success of Vysya Co-operative Bank Ltd., today stands on the shoulders of exceptional leaders 
             who guided us through various phases of growth. Their commitment to cooperative banking principles 
             and community service continues to inspire our current leadership team.
           </p>

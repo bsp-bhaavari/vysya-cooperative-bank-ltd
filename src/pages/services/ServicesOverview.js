@@ -10,8 +10,7 @@ import {
   Send,
   Wallet,
   Mail,
-  FileText,
-  Receipt
+  FileText
 } from 'lucide-react';
 import Card, { CardHeader, CardTitle, CardContent } from '../../components/Card';
 
@@ -80,14 +79,6 @@ const ServicesOverview = () => {
       link: '/services/email-statement',
       features: ['Eco-friendly', 'Instant delivery', 'Secure access'],
       color: 'secondary'
-    },
-    {
-      title: 'NACH',
-      description: 'National Automated Clearing House for recurring payments',
-      icon: Receipt,
-      link: '/services/nach',
-      features: ['Automated payments', 'Bill payments', 'Investments'],
-      color: 'primary'
     },
     {
       title: 'Demand Draft',

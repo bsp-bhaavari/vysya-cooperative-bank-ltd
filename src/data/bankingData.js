@@ -492,7 +492,7 @@ export const loansData = {
       'Tenure of 6 months'
     ],
     eligibility: [
-      'Members of Vysya Co-operative Bank Ltd',
+      'Members of Vysya Co-operative Bank Ltd.,',
       'All applicants aged 21-60 years',
       'Minimum monthly income as per bank policy'
     ],

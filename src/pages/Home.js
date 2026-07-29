@@ -121,7 +121,7 @@ const Home = () => {
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <div className="mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-trust-900 mb-3 tracking-tight border-b-2 border-gold-400 inline-block pb-2">
-              About Vysya Co-operative Bank
+              About Vysya Co-operative Bank Ltd.,
             </h2>
             <h3 className="text-2xl md:text-3xl text-trust-700 font-light mb-8">
               Trusted Banking for a Better Tomorrow
@@ -130,7 +130,7 @@ const Home = () => {
           
           <div className="mb-16 space-y-6">
             <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
-              Vysya Co-operative Bank has been serving communities with excellence and integrity for over four decades. 
+              Vysya Co-operative Bank Ltd., has been serving communities with excellence and integrity for over four decades. 
               We combine traditional banking values with innovative technology to provide you with the best 
               financial solutions tailored to your needs.
             </p>
@@ -270,7 +270,7 @@ const Home = () => {
             <div className="relative z-10 text-center">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
                 Ready to Experience
-                <span className="text-gold-400"> Vysya Co-operative Banking?</span>
+                <span className="text-gold-400"> Vysya Co-operative Bank Ltd., Banking?</span>
               </h2>
               <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
                 Join thousands of satisfied customers who have transformed their banking experience with us

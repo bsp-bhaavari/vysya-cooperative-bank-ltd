@@ -11,7 +11,6 @@ import ATMCard from './ATMCard';
 import IMPS from './IMPS';
 import UPI from './UPI';
 import EmailStatement from './EmailStatement';
-import NACH from './NACH';
 import DemandDraft from './DemandDraft';
 import QRCode from './QRCode';
 
@@ -54,10 +53,6 @@ const ServicesLayout = () => {
       path: '/services/email-statement',
     },
     {
-      name: 'NACH',
-      path: '/services/nach',
-    },
-    {
       name: 'Demand Draft',
       path: '/services/demand-draft',
     },
@@ -85,7 +80,6 @@ const ServicesLayout = () => {
                 <Route path="/imps" element={<IMPS />} />
                 <Route path="/upi" element={<UPI />} />
                 <Route path="/email-statement" element={<EmailStatement />} />
-                <Route path="/nach" element={<NACH />} />
                 <Route path="/demand-draft" element={<DemandDraft />} />
                 <Route path="/qr-code" element={<QRCode />} />
               </Routes>
