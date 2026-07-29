@@ -2,16 +2,16 @@ import React from 'react';
 import Card from '../../components/Card';
 
 const galleryItems = [
-  { id: 1, image: '/images/gallery/photo_1.jpg' },
-  { id: 2, image: '/images/gallery/photo_2.jpg' },
-  { id: 3, image: '/images/gallery/photo_3.jpg' },
-  { id: 4, image: '/images/gallery/photo_4.jpg' },
-  { id: 5, image: '/images/gallery/photo_5.jpg' },
-  { id: 6, image: '/images/gallery/photo_6.jpg' },
-  { id: 7, image: '/images/gallery/photo_7.jpg' },
-  { id: 8, image: '/images/gallery/photo_8.jpg' },
-  { id: 9, image: '/images/gallery/photo_9.jpg' },
-  { id: 10, image: '/images/gallery/photo_10.jpg' }
+  { id: 1, image: '/images/gallery/photo_1.jpeg' },
+  { id: 2, image: '/images/gallery/photo_2.jpeg' },
+  { id: 3, image: '/images/gallery/photo_3.jpeg' },
+  { id: 4, image: '/images/gallery/photo_4.jpeg' },
+  { id: 5, image: '/images/gallery/photo_5.jpeg' },
+  { id: 6, image: '/images/gallery/photo_6.jpeg' },
+  { id: 7, image: '/images/gallery/photo_7.jpeg' },
+  { id: 8, image: '/images/gallery/photo_8.jpeg' },
+  { id: 9, image: '/images/gallery/photo_9.jpeg' },
+  { id: 10, image: '/images/gallery/photo_10.jpeg' }
 ];
 
 const Gallery = () => {
