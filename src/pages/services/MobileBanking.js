@@ -76,6 +76,9 @@ const MobileBanking = () => {
 
   return (
     <div className="space-y-8">
+      <div className="text-center bg-trust-50 border border-trust-200 rounded-lg py-3 px-6">
+        <p className="text-trust-700 font-semibold text-sm tracking-wider uppercase">VERY SHORTLY</p>
+      </div>
       <div className="flex items-center space-x-4 mb-6">
         <div className="w-16 h-16 bg-trust-50/50 rounded-xl flex items-center justify-center">
           <Smartphone className="w-8 h-8 text-trust-600" />
@@ -99,7 +102,7 @@ const MobileBanking = () => {
         <CardContent>
           <div className="grid md:grid-cols-4 gap-6">
             <div className="text-center">
-              <div className="text-2xl font-bold text-trust-600 mb-1">50+</div>
+              <div className="text-2xl font-bold text-trust-600 mb-1">48+</div>
               <p className="text-gray-600">Banking Services</p>
             </div>
             <div className="text-center">

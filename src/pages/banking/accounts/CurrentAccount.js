@@ -7,7 +7,6 @@ const CurrentAccount = () => {
   const features = [
     'High transaction volume support',
     'Overdraft facility available',
-    'Free NEFT/RTGS transactions',
     'Business debit card with higher limits',
     'Mobile and internet banking',
     'SMS alerts for transactions',
@@ -68,14 +67,10 @@ const CurrentAccount = () => {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
             <div className="text-center">
               <div className="text-2xl font-bold text-trust-600 mb-1">₹2,000</div>
               <p className="text-gray-600">Minimum Balance</p>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-gold-600 mb-1">Free</div>
-              <p className="text-gray-600">NEFT/RTGS</p>
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold text-trust-600 mb-1">High</div>

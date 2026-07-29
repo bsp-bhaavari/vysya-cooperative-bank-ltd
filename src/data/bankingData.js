@@ -101,26 +101,39 @@ export const accountsData = {
     name: 'Lakshmi Deposit (LD)',
     path: '/banking/accounts/lakshmi-deposit',
     icon: 'Calendar',
-    description: 'Payment of fixed amount for a fixed period. Interest is accumulated quarterly and customer gets compounded interest together with principle on the due date. This helps depositor to earn interest on interest.',
+    description: 'Payment of fixed amount for a fixed period. Interest is accumulated quarterly and the customer receives compounded interest together with the principal on the maturity date.',
     features: [
-      'Minimum amount is Rs. 500/-',
-      'Minimum period of 1 year and maximum of 10 years',
-      'Interest compounded quarterly',
-      'Interest automatically ploughed back into the deposit on quarterly basis',
-      'Loan can be granted up to 85% of the deposit amount against pledge',
+      'Minimum amount: Rs. 500/-',
+      'Deposit period: Minimum 1 year, Maximum 10 years',
+      'Interest is compounded quarterly',
+      'Interest is automatically ploughed back into the deposit every quarter',
+      'Helps earn interest on interest',
+      'Loan facility available up to 85% of the deposit amount against pledge of Lakshmi Deposit Certificate',
+      'Eligible for individuals, firms, corporate bodies, associations and similar entities',
+      'Maturity proceeds are credited to Savings/Current Account or paid through Banker\'s Cheque/Pay Order',
+      'KYC documentation is mandatory',
+      'Auto-renewal facility is available as per bank policy',
       'Nomination facility available',
-      'Auto renewal system on maturity',
-      'Minimum amount of Deposit: Rs. 100/-',
-      'Range of Term of deposit: 3 months - 10 years'
+      'Loan/Overdraft facility up to 85% on face value of the deposit or 75% of principal plus accrued interest (whichever is higher)',
+      'Minimum deposit amount: Rs. 100/-',
+      'Deposit tenure: 3 months to 10 years',
+      'Single and joint deposits are permitted',
+      'PAN is mandatory for remittances of Rs. 50,000 or more',
+      'Premature closure is allowed with applicable penalty',
+      'No interest is payable if the deposit is closed before completing 15 days'
     ],
     eligibility: [
-      'Any individuals, firms, corporate bodies, associations etc.'
+      'Individuals',
+      'Firms',
+      'Corporate bodies',
+      'Associations and similar entities'
     ],
     documents: [
       'Proof of residence',
       'Proof of identification',
       'Recent photograph of the depositor',
-      'PAN card (must for remittance >= Rs.50,000)'
+      'PAN card (must for remittance >= Rs.50,000)',
+      'KYC form duly filled'
     ],
     interestRate: 'As per bank rates'
   },
@@ -134,7 +147,7 @@ export const accountsData = {
       'Minimum period of 15 days and up to 120 months',
       'Interest paid Monthly/Quarterly or along with principal on maturity',
       'Loan granted up to 90% of the deposit amount against pledge',
-      'Convenient for parking short term surplus funds from 30 days to 1 year',
+      'Convenient for parking short term surplus funds from 15 days to 1 year',
       'Through ECS/NEFT/IMPS, interest can be credited to any account',
       'Nomination facility available'
     ],
