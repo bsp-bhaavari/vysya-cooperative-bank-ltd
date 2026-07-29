@@ -9,6 +9,7 @@ import TermDeposit from './accounts/TermDeposit';
 import FixedDeposit from './accounts/FixedDeposit';
 import RecurringDeposit from './accounts/RecurringDeposit';
 import PigmyDeposit from './accounts/PigmyDeposit';
+import LakshmiDeposit from './accounts/LakshmiDeposit';
 import LoansOverview from './loans/LoansOverview';
 import JointLoan from './loans/JointLoan';
 import InstallmentLoan from './loans/InstallmentLoan';
@@ -92,6 +93,7 @@ const BankingLayout = () => {
                 <Route path="accounts/fixed-deposit" element={<FixedDeposit />} />
                 <Route path="accounts/recurring-deposit" element={<RecurringDeposit />} />
                 <Route path="accounts/pigmy-deposit" element={<PigmyDeposit />} />
+                <Route path="accounts/lakshmi-deposit" element={<LakshmiDeposit />} />
                 <Route path="loans" element={<LoansOverview />} />
                 <Route path="loans/joint-loan" element={<JointLoan />} />
                 <Route path="loans/installment-loan" element={<InstallmentLoan />} />
