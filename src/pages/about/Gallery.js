@@ -73,7 +73,7 @@ const Gallery = () => {
             <div className="aspect-square bg-gray-100 overflow-hidden">
               <img
                 src={`${process.env.PUBLIC_URL}${item.image}`}
-                alt={item.title}
+                alt={`Gallery ${item.id}`}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 onError={(e) => {
                   e.target.style.display = 'none';
@@ -81,15 +81,6 @@ const Gallery = () => {
                 }}
               />
             </div>
-            <CardContent className="p-4">
-              <h3 className="font-semibold text-trust-900 mb-1">{item.title}</h3>
-              <p className="text-sm text-gray-600 line-clamp-2">{item.description}</p>
-              <div className="mt-2">
-                  <span className="text-xs bg-trust-100 text-trust-800 px-2 py-1 rounded-full">
-                  {categories.find(c => c.id === item.category)?.name}
-                </span>
-              </div>
-            </CardContent>
           </Card>
         ))}
       </div>
