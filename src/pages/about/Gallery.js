@@ -6,25 +6,23 @@ const Gallery = () => {
 
   const categories = [
     { id: 'all', name: 'All Photos' },
+    { id: 'awards', name: 'Awards' },
     { id: 'events', name: 'Events' },
     { id: 'branches', name: 'Branches' },
-    { id: 'awards', name: 'Awards' },
     { id: 'community', name: 'Community' }
   ];
 
   const galleryItems = [
-    { id: 1, title: 'Annual Banking Summit', category: 'events', description: 'Our leadership team at the Banking Summit', image: '/images/gallery/event_1.jpg' },
-    { id: 2, title: 'Banking Conference', category: 'events', description: 'Participating in national banking conference', image: '/images/gallery/event_2.jpg' },
-    { id: 3, title: 'Board Meeting', category: 'events', description: 'Strategic planning session with board of directors', image: '/images/gallery/event_3.jpg' },
-    { id: 4, title: 'Administrative Office', category: 'branches', description: 'Our administrative office building', image: '/images/gallery/branch_1.jpg' },
-    { id: 5, title: 'Branch Interior', category: 'branches', description: 'Modern banking facilities at our branch', image: '/images/gallery/branch_2.jpg' },
-    { id: 6, title: 'Customer Service', category: 'branches', description: 'Dedicated customer service counters', image: '/images/gallery/branch_3.jpg' },
-    { id: 7, title: 'Best Bank Award', category: 'awards', description: 'Receiving prestigious cooperative bank award', image: '/images/gallery/award_1.jpg' },
-    { id: 8, title: 'Excellence Award', category: 'awards', description: 'Recognition for outstanding banking services', image: '/images/gallery/award_2.jpg' },
-    { id: 9, title: 'Financial Literacy Camp', category: 'community', description: 'Educating rural communities about banking', image: '/images/gallery/community_1.jpg' },
-    { id: 10, title: 'Tree Plantation Drive', category: 'community', description: 'Environmental initiative by bank employees', image: '/images/gallery/community_2.jpg' },
-    { id: 11, title: 'Blood Donation Camp', category: 'community', description: 'Corporate social responsibility initiative', image: '/images/gallery/community_3.jpg' },
-    { id: 12, title: 'Community Outreach', category: 'community', description: 'Engaging with local communities', image: '/images/gallery/community_3.jpg' }
+    { id: 1, title: 'Photo 1', category: 'awards', description: 'Award recognition photograph', image: '/images/gallery/placeholder_1.svg' },
+    { id: 2, title: 'Photo 2', category: 'awards', description: 'Award ceremony moment', image: '/images/gallery/placeholder_2.svg' },
+    { id: 3, title: 'Photo 3', category: 'awards', description: 'Recognition event photograph', image: '/images/gallery/placeholder_3.svg' },
+    { id: 4, title: 'Photo 4', category: 'awards', description: 'Celebrating achievement', image: '/images/gallery/placeholder_4.svg' },
+    { id: 5, title: 'Photo 5', category: 'events', description: 'Banking event photograph', image: '/images/gallery/placeholder_5.svg' },
+    { id: 6, title: 'Photo 6', category: 'events', description: 'Conference photograph', image: '/images/gallery/placeholder_6.svg' },
+    { id: 7, title: 'Photo 7', category: 'branches', description: 'Branch office photograph', image: '/images/gallery/placeholder_7.svg' },
+    { id: 8, title: 'Photo 8', category: 'branches', description: 'Branch interior view', image: '/images/gallery/placeholder_8.svg' },
+    { id: 9, title: 'Photo 9', category: 'community', description: 'Community outreach event', image: '/images/gallery/placeholder_9.svg' },
+    { id: 10, title: 'Photo 10', category: 'community', description: 'CSR initiative photograph', image: '/images/gallery/placeholder_10.svg' }
   ];
 
   const filteredGallery = selectedCategory === 'all'
@@ -34,10 +32,18 @@ const Gallery = () => {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-3xl font-bold text-trust-900 mb-4">Gallery</h1>
+        <h1 className="text-3xl font-bold text-trust-900 mb-4">Awards & Gallery</h1>
         <p className="text-lg text-gray-600 leading-relaxed">
           Explore our journey through these memorable moments that showcase our commitment to excellence, 
           community service, and innovation in banking.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-2xl p-6 md:p-8">
+        <h2 className="text-xl font-semibold text-trust-900 mb-2">Our Recognitions</h2>
+        <p className="text-gray-700 leading-relaxed">
+          We take pride in the awards and recognitions we have received over the years. 
+          Browse through the photographs below that capture these proud moments and celebrate our commitment to excellence in banking.
         </p>
       </div>
 
@@ -96,7 +102,7 @@ const Gallery = () => {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center">
               <img
-                src={`${process.env.PUBLIC_URL}/images/gallery/featured.jpg`}
+                src={`${process.env.PUBLIC_URL}/images/gallery/placeholder_1.svg`}
                 alt="Featured"
                 className="w-24 h-24 object-cover rounded-full mx-auto mb-3"
                 onError={(e) => { e.target.style.display = 'none'; }}

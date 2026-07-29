@@ -38,8 +38,7 @@ const Navbar = () => {
         { name: 'Board of Directors', path: '/about/board-of-directors' },
         { name: 'Previous Board Members', path: '/about/previous-board' },
         { name: 'Branches', path: '/about/branches' },
-        { name: 'Awards & Recognition', path: '/about/awards' },
-        { name: 'Photo Gallery', path: '/about/gallery' }
+        { name: 'Awards & Gallery', path: '/about/gallery' }
       ]
     },
     {

@@ -7,7 +7,6 @@ import VisionMission from './VisionMission';
 import BoardOfDirectors from './BoardOfDirectors';
 import PreviousBoard from './PreviousBoard';
 import Branches from './Branches';
-import Awards from './Awards';
 import Gallery from './Gallery';
 
 const AboutLayout = () => {
@@ -33,11 +32,7 @@ const AboutLayout = () => {
       path: '/about/branches',
     },
     {
-      name: 'Awards',
-      path: '/about/awards',
-    },
-    {
-      name: 'Gallery',
+      name: 'Awards & Gallery',
       path: '/about/gallery',
     },
   ];
@@ -57,7 +52,6 @@ const AboutLayout = () => {
                 <Route path="/board-of-directors" element={<BoardOfDirectors />} />
                 <Route path="/previous-board" element={<PreviousBoard />} />
                 <Route path="/branches" element={<Branches />} />
-                <Route path="/awards" element={<Awards />} />
                 <Route path="/gallery" element={<Gallery />} />
               </Routes>
             </div>

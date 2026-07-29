@@ -19,6 +19,7 @@ const Breadcrumb = () => {
     
     const displayNames = {
       '/about': 'About Us',
+      '/about/gallery': 'Awards & Gallery',
       '/banking': 'Banking',
       '/interest-rates': 'Interest Rates',
       '/reports': 'Reports',
