@@ -42,7 +42,7 @@ const Gallery = () => {
               <img
                 src={`${process.env.PUBLIC_URL}${item.image}`}
                 alt={`Gallery ${item.id}`}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
                 onError={(e) => {
                   e.target.style.display = 'none';
                   e.target.parentElement.innerHTML = '<div class="w-full h-full flex items-center justify-center text-4xl text-gray-400">📷</div>';
