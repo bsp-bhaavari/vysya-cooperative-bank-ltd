@@ -118,44 +118,45 @@ const Home = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-white/92 via-surface-tint/85 to-white/90" />
         <div className="absolute inset-0 bg-subtle-glow pointer-events-none" aria-hidden />
         
-        <div className="relative z-10 max-w-4xl mx-auto text-center">
-          <div className="mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-trust-900 mb-3 tracking-tight border-b-2 border-gold-400 inline-block pb-2">
-              About Vysya Co-operative Bank Ltd.,
-            </h2>
-            <h3 className="text-2xl md:text-3xl text-trust-700 font-light mb-8">
-              Trusted Banking for a Better Tomorrow
-            </h3>
-          </div>
-          
-          <div className="mb-16 space-y-6">
-            <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
-              Vysya Co-operative Bank Ltd., has been serving communities with excellence and integrity for over four decades. 
-              We combine traditional banking values with innovative technology to provide you with the best 
-              financial solutions tailored to your needs.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
-              Our comprehensive range of services includes personal banking, business solutions, loans, 
-              and digital banking options. We are committed to making banking accessible, secure, and 
-              convenient for all our customers.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
-              With a strong foundation of trust and customer satisfaction, we continue to grow and evolve, 
-              always keeping your financial well-being at the heart of everything we do.
-            </p>
-          </div>
+          <div className="relative z-10 max-w-4xl mx-auto text-center">
+            <div className="mb-8">
+              <a
+                href={`${process.env.PUBLIC_URL}/reports/general-body-meeting-invitation.pdf`}
+                download
+                className="inline-flex flex-col items-center gap-1 px-8 py-4 bg-trust-800 text-white rounded-lg hover:bg-trust-700 transition-colors duration-300 shadow-md hover:shadow-lg"
+              >
+                <Download className="w-5 h-5 mb-1" />
+                <span className="text-xs font-medium uppercase tracking-wider">Click here to download</span>
+                <span className="text-base font-bold">48th GENERAL BODY MEETING INVITATION</span>
+              </a>
+            </div>
 
-          <div className="mb-8">
-            <a
-              href={`${process.env.PUBLIC_URL}/reports/general-body-meeting-invitation.pdf`}
-              download
-              className="inline-flex items-center gap-2 px-6 py-3 bg-trust-800 text-white rounded-lg hover:bg-trust-700 transition-colors duration-300 shadow-md hover:shadow-lg"
-            >
-              <Download className="w-5 h-5" />
-              <span className="text-sm font-medium">Invitation for General Body Meeting</span>
-            </a>
+            <div className="mb-12">
+              <h2 className="text-4xl md:text-5xl font-bold text-trust-900 mb-3 tracking-tight border-b-2 border-gold-400 inline-block pb-2">
+                About Vysya Co-operative Bank Ltd.,
+              </h2>
+              <h3 className="text-2xl md:text-3xl text-trust-700 font-light mb-8">
+                Trusted Banking for a Better Tomorrow
+              </h3>
+            </div>
+            
+            <div className="mb-16 space-y-6">
+              <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+                Vysya Co-operative Bank Ltd., has been serving communities with excellence and integrity for over four decades. 
+                We combine traditional banking values with innovative technology to provide you with the best 
+                financial solutions tailored to your needs.
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+                Our comprehensive range of services includes personal banking, business solutions, loans, 
+                and digital banking options. We are committed to making banking accessible, secure, and 
+                convenient for all our customers.
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+                With a strong foundation of trust and customer satisfaction, we continue to grow and evolve, 
+                always keeping your financial well-being at the heart of everything we do.
+              </p>
+            </div>
           </div>
-        </div>
       </section>
 
       <section className="py-20 bg-gradient-to-br from-trust-800 via-trust-900 to-trust-950 relative overflow-hidden">

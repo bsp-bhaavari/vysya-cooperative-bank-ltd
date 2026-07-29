@@ -35,14 +35,14 @@ const Gallery = () => {
 
       <h2 className="text-2xl font-bold text-trust-900">All Photos</h2>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {galleryItems.map((item) => (
-          <Card key={item.id} className="overflow-hidden group cursor-pointer">
-            <div className="aspect-square bg-gray-100 overflow-hidden">
+          <Card key={item.id} className="overflow-hidden">
+            <div className="aspect-[4/3] bg-gray-100 overflow-hidden">
               <img
                 src={`${process.env.PUBLIC_URL}${item.image}`}
                 alt={`Gallery ${item.id}`}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-full object-cover"
                 onError={(e) => {
                   e.target.style.display = 'none';
                   e.target.parentElement.innerHTML = '<div class="w-full h-full flex items-center justify-center text-4xl text-gray-400">📷</div>';
