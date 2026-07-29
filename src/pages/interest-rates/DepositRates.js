@@ -7,13 +7,14 @@ import { interestRatesData } from '../../data/bankingData';
 const DepositRates = () => {
   const depositRates = interestRatesData.deposits;
 
-  const tableHeaders = ['Tenure', 'Interest Rate', 'Notes'];
+  const tableHeaders = ['Tenure', 'Interest Rate'];
 
-  const tableData = (depositRates || []).map(deposit => [
-    deposit.depositName,
-    deposit.interestRate,
-    deposit.note || ''
-  ]);
+  const tableData = (depositRates || []).map(deposit => {
+    const tenure = deposit.depositName === '50 Lakhs & Above (1–5 Years)'
+      ? `${deposit.depositName} (${deposit.note})`
+      : deposit.depositName;
+    return [tenure, deposit.interestRate];
+  });
 
   const importantNotes = [
     'Interest rates are subject to change without prior notice',
