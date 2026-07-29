@@ -2,16 +2,16 @@ import React from 'react';
 import Card from '../../components/Card';
 
 const galleryItems = [
-  { id: 1, image: '/images/gallery/placeholder_1.svg' },
-  { id: 2, image: '/images/gallery/placeholder_2.svg' },
-  { id: 3, image: '/images/gallery/placeholder_3.svg' },
-  { id: 4, image: '/images/gallery/placeholder_4.svg' },
-  { id: 5, image: '/images/gallery/placeholder_5.svg' },
-  { id: 6, image: '/images/gallery/placeholder_6.svg' },
-  { id: 7, image: '/images/gallery/placeholder_7.svg' },
-  { id: 8, image: '/images/gallery/placeholder_8.svg' },
-  { id: 9, image: '/images/gallery/placeholder_9.svg' },
-  { id: 10, image: '/images/gallery/placeholder_10.svg' }
+  { id: 1, image: '/images/gallery/photo_1.svg' },
+  { id: 2, image: '/images/gallery/photo_2.svg' },
+  { id: 3, image: '/images/gallery/photo_3.svg' },
+  { id: 4, image: '/images/gallery/photo_4.svg' },
+  { id: 5, image: '/images/gallery/photo_5.svg' },
+  { id: 6, image: '/images/gallery/photo_6.svg' },
+  { id: 7, image: '/images/gallery/photo_7.svg' },
+  { id: 8, image: '/images/gallery/photo_8.svg' },
+  { id: 9, image: '/images/gallery/photo_9.svg' },
+  { id: 10, image: '/images/gallery/photo_10.svg' }
 ];
 
 const Gallery = () => {
@@ -35,7 +35,7 @@ const Gallery = () => {
 
       <h2 className="text-2xl font-bold text-trust-900">All Photos</h2>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 gap-8">
         {galleryItems.map((item) => (
           <Card key={item.id} className="overflow-hidden">
             <div className="aspect-[4/3] bg-gray-100 overflow-hidden">
