@@ -168,7 +168,7 @@ const Navbar = () => {
             <img src={bankLogo} alt="Vysya Co-operative Bank Ltd., Tumakuru" className="h-10 w-auto max-w-[min(9rem,28vw)] object-contain shrink-0 drop-shadow-md rounded-sm " />
             <div className="leading-tight hidden sm:block">
               <span className="text-lg font-bold text-white whitespace-nowrap group-hover:text-gold-300 transition-colors duration-200">
-                Vysya Cooperative Bank Ltd
+                Vysya Co-operative Bank Ltd.,
               </span>
             </div>
           </Link>
