@@ -9,10 +9,10 @@ const Charges = () => {
   ];
 
   const rtgsCharges = [
-    ['Up to Rs.1 Lakh', 'Rs.15 + GST = 17.70', 'Per Transaction'],
-    ['Rs.1 Lakh to Rs.5 Lakh', 'Rs.30 + GST = 35.40', 'Per Transaction'],
-    ['Rs.5 Lakh to Rs.10 Lakh', 'Rs.40 + GST = 47.20', 'Per Transaction'],
-    ['Above Rs.10 Lakhs', 'Rs.110 + GST = 129.80', 'Per Transaction'],
+    ['Up to Rs.1 Lakh', 'Rs.5 + GST = 5.90', 'Per Transaction'],
+    ['Rs.1 Lakh to Rs.2 Lakh', 'Rs.15 + GST = 17.70', 'Per Transaction'],
+    ['Rs.2 Lakh to Rs.5 Lakh', 'Rs.25 + GST = 29.50', 'Per Transaction'],
+    ['Above Rs.5 Lakhs', 'Rs.50 + GST = 59.00', 'Per Transaction'],
     ['GST Payment', 'Rs.50 + GST = 59.00', 'Per Transaction'],
     ['ITD Payment', 'Rs.100 + GST = 118.00', 'Per Transaction']
   ];
@@ -41,8 +41,8 @@ const Charges = () => {
   ];
 
   const maintenanceCharges = [
-    ['SB A/C - Minimum balance Rs.1000/- Incidental Charges', 'Rs.25 + GST/Per quarter = 29.50', 'Per Quarter'],
-    ['Current A/C - Minimum Balance Rs.2000/- Incidental Charges', 'Rs.25 + GST/Per quarter = 29.50', 'Per Quarter'],
+    ['SB A/C - Minimum balance Rs.1000/- Incidental Charges', 'Rs.100 + GST/Per year = 118', 'Per Year'],
+    ['Current A/C - Minimum Balance Rs.2000/- Incidental Charges', 'Rs.500 + Rs.1/Txn + GST/Per year = 590', 'Per Year'],
     ['KCD Late Fee', 'Rs.15/- for Rs.1000/-', 'Per Occurrence'],
     ['CC Renewals / Gold O.D Renewals', 'Min Rs.2000+GST or 0.05%+GST on Advance Amt whichever is Higher', 'Per Renewal'],
     ['Medical Fund', 'Rs.1000/- (One Time Fee)', 'One Time'],
@@ -56,7 +56,7 @@ const Charges = () => {
       <div>
         <h1 className="text-3xl font-bold text-trust-900 mb-4">Service Charges</h1>
         <p className="text-lg text-gray-600 leading-relaxed">
-          VYSYA CO-OPERATIVE BANK LTD., TUMAKURU-572102. Charges w.e.f. 21/05/2025.
+          VYSYA CO-OPERATIVE BANK LTD., TUMAKURU-572102. Charges w.e.f. 05/08/2026.
           Transparent and competitive pricing for all our banking services.
         </p>
       </div>
