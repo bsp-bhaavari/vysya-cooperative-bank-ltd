@@ -11,7 +11,12 @@ const galleryItems = [
   { id: 7, image: '/images/gallery/photo_7.jpeg' },
   { id: 8, image: '/images/gallery/photo_8.jpeg' },
   { id: 9, image: '/images/gallery/photo_9.jpeg' },
-  { id: 10, image: '/images/gallery/photo_10.jpeg' }
+  { id: 10, image: '/images/gallery/photo_10.jpeg' },
+  { id: 11, image: '/images/gallery/photo_11.jpeg' },
+  { id: 12, image: '/images/gallery/photo_12.jpeg' },
+  { id: 13, image: '/images/gallery/photo_13.jpeg' },
+  { id: 14, image: '/images/gallery/photo_14.jpeg' },
+  { id: 15, image: '/images/gallery/photo_15.jpeg' }
 ];
 
 const Gallery = () => {
